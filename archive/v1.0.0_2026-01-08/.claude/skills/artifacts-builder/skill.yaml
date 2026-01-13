@@ -1,0 +1,10 @@
+name: artifacts-builder
+description: 使用 React、Tailwind CSS 和 Shadcn/ui 组件构建复杂的 HTML 制品
+version: 1.0.0
+author: Deep Research Pro Team
+tags:
+  - react
+  - tailwind
+  - shadcn
+  - artifacts
+  - components

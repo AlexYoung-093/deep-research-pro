@@ -1,0 +1,9 @@
+name: zustand-state
+description: Zustand 状态管理最佳实践
+version: 1.0.0
+author: Deep Research Pro Team
+tags:
+  - zustand
+  - state
+  - react
+  - hooks

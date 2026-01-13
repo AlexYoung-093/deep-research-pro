@@ -1,0 +1,9 @@
+name: echarts-visualization
+description: 使用 ECharts 5.x 创建专业的数据可视化图表
+version: 1.0.0
+author: Deep Research Pro Team
+tags:
+  - echarts
+  - charts
+  - visualization
+  - data

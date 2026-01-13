@@ -1,0 +1,235 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* =====================================================
+   Deep Research Pro - 全局样式
+   设计风格: 苹果官网极简主义
+   ===================================================== */
+
+@layer base {
+  :root {
+    /* 主色调 - 中性色 */
+    --color-primary: 29 29 31;           /* #1d1d1f - 深灰黑 */
+    --color-secondary: 134 134 139;      /* #86868b - 中灰 */
+    --color-tertiary: 245 245 247;       /* #f5f5f7 - 浅灰 */
+    
+    /* 背景色 */
+    --bg-primary: 255 255 255;           /* #ffffff - 纯白 */
+    --bg-secondary: 251 251 253;         /* #fbfbfd - 米白 */
+    --bg-tertiary: 245 245 247;          /* #f5f5f7 - 浅灰 */
+    
+    /* 边框色 */
+    --border-default: 210 210 215;       /* #d2d2d7 */
+    --border-light: 232 232 237;         /* #e8e8ed */
+    
+    /* 强调色 */
+    --accent-blue: 0 113 227;            /* #0071e3 */
+    --accent-green: 52 199 89;           /* #34c759 */
+    --accent-orange: 255 159 10;         /* #ff9f0a */
+    --accent-red: 255 59 48;             /* #ff3b30 */
+    
+    /* Shadcn/ui 变量 */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 12%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 12%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 12%;
+    --primary: 0 0% 12%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 12%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
+    --accent: 0 0% 96%;
+    --accent-foreground: 0 0% 12%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 0 0% 89%;
+    --input: 0 0% 89%;
+    --ring: 0 0% 12%;
+    --radius: 12px;
+  }
+
+  .dark {
+    /* 暗色模式 */
+    --color-primary: 245 245 247;
+    --color-secondary: 134 134 139;
+    --color-tertiary: 44 44 46;
+    
+    --bg-primary: 0 0 0;
+    --bg-secondary: 28 28 30;
+    --bg-tertiary: 44 44 46;
+    
+    --border-default: 72 72 74;
+    --border-light: 58 58 60;
+    
+    /* Shadcn/ui 暗色变量 */
+    --background: 0 0% 0%;
+    --foreground: 0 0% 96%;
+    --card: 0 0% 11%;
+    --card-foreground: 0 0% 96%;
+    --popover: 0 0% 11%;
+    --popover-foreground: 0 0% 96%;
+    --primary: 0 0% 96%;
+    --primary-foreground: 0 0% 12%;
+    --secondary: 0 0% 17%;
+    --secondary-foreground: 0 0% 96%;
+    --muted: 0 0% 17%;
+    --muted-foreground: 0 0% 55%;
+    --accent: 0 0% 17%;
+    --accent-foreground: 0 0% 96%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 96%;
+    --border: 0 0% 28%;
+    --input: 0 0% 28%;
+    --ring: 0 0% 96%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* 选择文字颜色 */
+  ::selection {
+    @apply bg-primary/10;
+  }
+}
+
+@layer components {
+  /* 苹果风格按钮 */
+  .btn-apple-primary {
+    @apply bg-[#1d1d1f] text-white px-8 py-4 rounded-full 
+           text-lg font-medium transition-all duration-200
+           hover:opacity-90 hover:scale-[1.02]
+           active:scale-[0.98]
+           dark:bg-[#f5f5f7] dark:text-[#1d1d1f];
+  }
+
+  .btn-apple-secondary {
+    @apply border-2 border-[#1d1d1f] text-[#1d1d1f] 
+           px-6 py-3 rounded-full font-medium
+           transition-all duration-200
+           hover:bg-[#1d1d1f] hover:text-white
+           dark:border-[#f5f5f7] dark:text-[#f5f5f7]
+           dark:hover:bg-[#f5f5f7] dark:hover:text-[#1d1d1f];
+  }
+
+  /* 苹果风格输入框 */
+  .input-apple {
+    @apply border-0 border-b-2 border-gray-200 rounded-none 
+           focus:border-[#1d1d1f] focus:ring-0 
+           text-lg py-4 bg-transparent
+           placeholder:text-gray-400
+           transition-colors duration-200
+           dark:border-gray-700 dark:focus:border-[#f5f5f7];
+  }
+
+  /* 苹果风格卡片 */
+  .card-apple {
+    @apply bg-white rounded-3xl p-8 
+           shadow-soft border-0 
+           hover:shadow-strong
+           transition-shadow duration-300
+           dark:bg-[#1c1c1e];
+  }
+
+  /* 页面容器 */
+  .container-apple {
+    @apply max-w-7xl mx-auto px-6 md:px-12 lg:px-24;
+  }
+
+  /* 大标题 - 使用直接样式避免循环引用 */
+  .text-display-styled {
+    font-size: 80px;
+    line-height: 1;
+    letter-spacing: -0.03em;
+    font-weight: 600;
+    @apply text-[#1d1d1f] dark:text-[#f5f5f7];
+  }
+
+  .text-headline-styled {
+    font-size: 48px;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    font-weight: 600;
+    @apply text-[#1d1d1f] dark:text-[#f5f5f7];
+  }
+
+  /* 进度条容器 */
+  .progress-container {
+    @apply space-y-6 p-8 rounded-3xl bg-background-tertiary 
+           dark:bg-[#1c1c1e];
+  }
+
+  /* 报告预览区域 */
+  .report-preview {
+    @apply w-full min-h-[600px] rounded-2xl bg-white 
+           shadow-medium overflow-hidden
+           dark:bg-[#1c1c1e];
+  }
+}
+
+@layer utilities {
+  /* 大留白 */
+  .section-spacing {
+    @apply py-16 md:py-24 lg:py-32;
+  }
+
+  /* 文字渐变 */
+  .text-gradient {
+    @apply bg-clip-text text-transparent 
+           bg-gradient-to-r from-[#1d1d1f] to-[#86868b];
+  }
+
+  /* 隐藏滚动条 */
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* 动画延迟 */
+  .animation-delay-100 { animation-delay: 100ms; }
+  .animation-delay-200 { animation-delay: 200ms; }
+  .animation-delay-300 { animation-delay: 300ms; }
+  .animation-delay-400 { animation-delay: 400ms; }
+  .animation-delay-500 { animation-delay: 500ms; }
+}
+
+/* 自定义滚动条 (非隐藏时) */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-300 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-400;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  @apply bg-gray-600;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-500;
+}
+

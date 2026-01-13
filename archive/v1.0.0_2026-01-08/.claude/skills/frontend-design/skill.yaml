@@ -1,0 +1,10 @@
+name: frontend-design
+description: 指导 Claude 避免"AI slop"或通用美学，做出大胆的设计决策。专为 React + Tailwind 项目优化。
+version: 1.0.0
+author: Deep Research Pro Team
+tags:
+  - frontend
+  - design
+  - react
+  - tailwind
+  - ui

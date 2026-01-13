@@ -1,0 +1,801 @@
+app:
+  description: 深度研究报告自动生成工作流 V3 - 五源信息抓取、深度分析、数据可视化、专业报告输出
+  icon: 📚
+  icon_background: '#E3F2FD'
+  mode: workflow
+  name: Deep_Research_Report_Generator_V3
+  use_icon_as_answer_icon: false
+dependencies:
+- current_identifier: null
+  type: marketplace
+  value:
+    marketplace_plugin_unique_identifier: langgenius/openai_api_compatible:0.0.21@f46f21a207621f8ec5e5ef250e118a23d479c7a6ae2fe690823bae9d49d015fa
+kind: app
+version: 0.3.1
+workflow:
+  conversation_variables: []
+  environment_variables:
+  - id: jina_api_key
+    name: JINA_API_KEY
+    value: jina_6c38045e42fd431d9ae42fbc98119c4e3EwlsS6LafhcIiZjFiki4xKq5OMl
+    value_type: secret
+  features:
+    file_upload:
+      allowed_file_extensions: []
+      allowed_file_types: []
+      allowed_file_upload_methods:
+      - local_file
+      - remote_url
+      enabled: false
+      fileUploadConfig:
+        audio_file_size_limit: 50
+        batch_count_limit: 5
+        file_size_limit: 15
+        image_file_size_limit: 10
+        video_file_size_limit: 100
+        workflow_file_upload_limit: 10
+      image:
+        enabled: false
+        number_limits: 3
+        transfer_methods:
+        - local_file
+        - remote_url
+      number_limits: 3
+    opening_statement: ''
+    retriever_resource:
+      enabled: true
+    sensitive_word_avoidance:
+      enabled: false
+    speech_to_text:
+      enabled: false
+    suggested_questions: []
+    suggested_questions_after_answer:
+      enabled: false
+    text_to_speech:
+      enabled: false
+      language: ''
+      voice: ''
+  graph:
+    edges:
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: start
+        targetType: llm
+      id: 2001-source-2002-target
+      source: '2001'
+      sourceHandle: source
+      target: '2002'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: start
+        targetType: http-request
+      id: 2001-source-20021-target
+      source: '2001'
+      sourceHandle: source
+      target: '20021'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: start
+        targetType: http-request
+      id: 2001-source-20022-target
+      source: '2001'
+      sourceHandle: source
+      target: '20022'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: start
+        targetType: http-request
+      id: 2001-source-20023-target
+      source: '2001'
+      sourceHandle: source
+      target: '20023'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: start
+        targetType: http-request
+      id: 2001-source-20024-target
+      source: '2001'
+      sourceHandle: source
+      target: '20024'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: start
+        targetType: http-request
+      id: 2001-source-20025-target
+      source: '2001'
+      sourceHandle: source
+      target: '20025'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: llm
+        targetType: llm
+      id: 2002-source-2003-target
+      source: '2002'
+      sourceHandle: source
+      target: '2003'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: http-request
+        targetType: llm
+      id: 20021-source-2003-target
+      source: '20021'
+      sourceHandle: source
+      target: '2003'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: http-request
+        targetType: llm
+      id: 20022-source-2003-target
+      source: '20022'
+      sourceHandle: source
+      target: '2003'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: http-request
+        targetType: llm
+      id: 20023-source-2003-target
+      source: '20023'
+      sourceHandle: source
+      target: '2003'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: http-request
+        targetType: llm
+      id: 20024-source-2003-target
+      source: '20024'
+      sourceHandle: source
+      target: '2003'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: http-request
+        targetType: llm
+      id: 20025-source-2003-target
+      source: '20025'
+      sourceHandle: source
+      target: '2003'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: llm
+        targetType: llm
+      id: 2003-source-2004-target
+      source: '2003'
+      sourceHandle: source
+      target: '2004'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: llm
+        targetType: llm
+      id: 2004-source-20041-target
+      source: '2004'
+      sourceHandle: source
+      target: '20041'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: llm
+        targetType: llm
+      id: 20041-source-20042-target
+      source: '20041'
+      sourceHandle: source
+      target: '20042'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: llm
+        targetType: llm
+      id: 2004-source-2005-target
+      source: '2004'
+      sourceHandle: source
+      target: '2005'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: llm
+        targetType: end
+      id: 2005-source-2009-target
+      source: '2005'
+      sourceHandle: source
+      target: '2009'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: llm
+        targetType: end
+      id: 20042-source-2009-target
+      source: '20042'
+      sourceHandle: source
+      target: '2009'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    nodes:
+    - data:
+        desc: ''
+        selected: false
+        title: 开始
+        type: start
+        variables:
+        - label: 研究主题/方向
+          max_length: 256
+          options: []
+          required: true
+          type: text-input
+          variable: research_topic
+        - label: 报告类型
+          max_length: 64
+          options:
+          - 行业研报
+          - 竞品分析
+          - 技术调研
+          - 市场分析
+          - 趋势预测
+          - 政策解读
+          required: true
+          type: select
+          variable: report_type
+        - label: 研究深度
+          max_length: 64
+          options:
+          - 深度研究
+          - 中度分析
+          - 快速概览
+          required: true
+          type: select
+          variable: depth_level
+        - label: 报告字数要求
+          max_length: 64
+          options:
+          - 1500字
+          - 3000字
+          - 5000字
+          - 8000字
+          - 13000字
+          required: true
+          type: select
+          variable: word_count
+      height: 200
+      id: '2001'
+      position:
+        x: 80
+        y: 280
+      positionAbsolute:
+        x: 80
+        y: 280
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        authorization:
+          config: null
+          type: no-auth
+        body:
+          data:
+          - type: text
+            value: ''
+          type: none
+        desc: 抓取 DuckDuckGo 搜索结果
+        headers: ''
+        method: get
+        params: ''
+        retry_config:
+          max_retries: 3
+          retry_enabled: true
+          retry_interval: 2000
+        selected: false
+        ssl_verify: true
+        timeout:
+          connect: 60
+          read: 180
+          write: 30
+        title: HTTP抓取-DuckDuckGo
+        type: http-request
+        url: https://r.jina.ai/https://duckduckgo.com/?q={{#2001.research_topic#}}
+      height: 159
+      id: '20021'
+      position:
+        x: 460
+        y: 0
+      positionAbsolute:
+        x: 460
+        y: 0
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        authorization:
+          config: null
+          type: no-auth
+        body:
+          data:
+          - type: text
+            value: ''
+          type: none
+        desc: 抓取 Brave Search 搜索结果
+        headers: ''
+        method: get
+        params: ''
+        retry_config:
+          max_retries: 3
+          retry_enabled: true
+          retry_interval: 2000
+        selected: false
+        ssl_verify: true
+        timeout:
+          connect: 60
+          read: 180
+          write: 30
+        title: HTTP抓取-Brave
+        type: http-request
+        url: https://r.jina.ai/https://search.brave.com/search?q={{#2001.research_topic#}}
+      height: 159
+      id: '20022'
+      position:
+        x: 460
+        y: 180
+      positionAbsolute:
+        x: 460
+        y: 180
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        authorization:
+          config: null
+          type: no-auth
+        body:
+          data:
+          - type: text
+            value: ''
+          type: none
+        desc: 抓取 DuckDuckGo 深度搜索结果
+        headers: ''
+        method: get
+        params: ''
+        retry_config:
+          max_retries: 3
+          retry_enabled: true
+          retry_interval: 2000
+        selected: false
+        ssl_verify: true
+        timeout:
+          connect: 60
+          read: 180
+          write: 30
+        title: HTTP抓取-深度搜索
+        type: http-request
+        url: https://r.jina.ai/https://duckduckgo.com/?q={{#2001.research_topic#}}+市场规模+发展趋势+行业数据
+      height: 159
+      id: '20023'
+      position:
+        x: 460
+        y: 360
+      positionAbsolute:
+        x: 460
+        y: 360
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        authorization:
+          config: null
+          type: no-auth
+        body:
+          data:
+          - type: text
+            value: ''
+          type: none
+        desc: 抓取 Bing 搜索结果获取更多数据
+        headers: ''
+        method: get
+        params: ''
+        retry_config:
+          max_retries: 3
+          retry_enabled: true
+          retry_interval: 2000
+        selected: false
+        ssl_verify: true
+        timeout:
+          connect: 60
+          read: 180
+          write: 30
+        title: HTTP抓取-Bing
+        type: http-request
+        url: https://r.jina.ai/https://www.bing.com/search?q={{#2001.research_topic#}}+研究报告+市场分析
+      height: 159
+      id: '20024'
+      position:
+        x: 460
+        y: 540
+      positionAbsolute:
+        x: 460
+        y: 540
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        authorization:
+          config: null
+          type: no-auth
+        body:
+          data:
+          - type: text
+            value: ''
+          type: none
+        desc: 抓取 Google 搜索结果获取国际视角
+        headers: ''
+        method: get
+        params: ''
+        retry_config:
+          max_retries: 3
+          retry_enabled: true
+          retry_interval: 2000
+        selected: false
+        ssl_verify: true
+        timeout:
+          connect: 60
+          read: 180
+          write: 30
+        title: HTTP抓取-Google
+        type: http-request
+        url: https://r.jina.ai/https://www.google.com/search?q={{#2001.research_topic#}}+industry+analysis+market+size
+      height: 159
+      id: '20025'
+      position:
+        x: 460
+        y: 720
+      positionAbsolute:
+        x: 460
+        y: 720
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        context:
+          enabled: false
+          variable_selector: []
+        desc: ''
+        model:
+          completion_params:
+            max_tokens: 50000
+            temperature: 0.7
+          mode: chat
+          name: horologium-sonnet4.0
+          provider: langgenius/openai_api_compatible/openai_api_compatible
+        prompt_template:
+        - id: a1b2c3d4-0001-0001-0001-000000000001
+          role: system
+          text: "你是一位资深的研究规划专家，擅长将模糊的研究方向转化为结构化、可执行的研究框架。\n\n你的任务是根据用户提供的研究主题和报告类型，进行以下工作：\n\n1. 深度解析研究主题的核心内涵、边界范围和关键切入点\n2. 识别该主题涉及的核心概念、关键术语和重要维度\n3. 规划研究的逻辑框架，明确需要回答的核心问题\n4. 设计信息收集策略，指出需要关注的信息类型和来源方向\n\n**报告类型说明**：\n- 行业研报：关注行业规模、市场格局、主要玩家、发展趋势\n- 竞品分析：关注竞争对手、产品对比、优劣势分析、差异化策略\n- 技术调研：关注技术原理、实现方案、技术对比、落地难点\n- 市场分析：关注市场需求、用户画像、商业模式、增长潜力\n- 趋势预测：关注行业动向、技术演进、政策影响、未来预判\n- 政策解读：关注政策内容、影响分析、合规要求、应对策略\n\n输出要求：以清晰的结构化文本呈现研究规划，为后续的信息整合和深度分析提供明确指引。\n\n**深度研究要求**：\n1. 必须识别至少5个需要定量分析的关键指标（如市场规模、增长率、渗透率、用户数、融资额等）\n2. 必须规划至少3个需要进行对比分析的维度（如竞品对比、时间对比、区域对比等）\n3. 必须列出至少5个需要深入探讨的核心问题，每个问题都应指向具体的分析框架\n4. 对于每个分析维度，要明确需要获取的具体数据类型和可能的数据来源\n\n**研究规划输出结构**：\n- 第一部分：主题界定（明确研究边界、核心概念、关键术语）\n- 第二部分：核心问题清单（至少5个必须回答的核心问题）\n- 第三部分：分析维度矩阵（列出所有分析维度及其对应的分析方法）\n- 第四部分：数据需求清单（需要收集的具体数据类型、指标、时间范围）\n- 第五部分：预期输出框架（报告的章节结构和每章核心论点）"
+        - id: a1b2c3d4-0001-0001-0001-000000000002
+          role: user
+          text: "研究主题：{{#2001.research_topic#}}\n\n报告类型：{{#2001.report_type#}}\n\n研究深度：{{#2001.depth_level#}}\n\n字数要求：{{#2001.word_count#}}\n\n请为这个研究主题制定详细的研究规划框架。"
+        selected: false
+        title: 研究规划
+        type: llm
+        variables: []
+        vision:
+          enabled: false
+      height: 90
+      id: '2002'
+      position:
+        x: 460
+        y: 900
+      positionAbsolute:
+        x: 460
+        y: 900
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        context:
+          enabled: false
+          variable_selector: []
+        desc: ''
+        model:
+          completion_params:
+            max_tokens: 50000
+            temperature: 0.6
+          mode: chat
+          name: horologium-sonnet4.0
+          provider: langgenius/openai_api_compatible/openai_api_compatible
+        prompt_template:
+        - id: a1b2c3d4-0002-0002-0002-000000000001
+          role: system
+          text: "你是一位具备跨领域知识整合能力和批判性思维的资深研究分析师。你的核心任务是对多源信息进行深度整合、交叉验证和系统性分析。\n\n在处理信息时，你需要：\n\n1. **信息筛选与提炼**：从原始搜索结果中识别高价值信息，过滤噪音和重复内容，提取核心事实、数据和观点\n\n2. **交叉验证**：对比不同来源的信息一致性，标注存在分歧或不确定的内容，优先采信权威来源\n\n3. **深度分析框架**：\n   - 现象层：当前状态、表现形式、主要特征\n   - 本质层：核心原因、内在逻辑、驱动因素\n   - 关联层：上下游影响、相关领域联动、利益相关方\n   - 趋势层：发展方向、潜在变化、未来预判\n   - 风险层：不确定因素、潜在风险、关键变量\n\n4. **多视角审视**：从技术、商业、社会、政策等多个维度进行立体分析\n\n5. **逻辑推演**：基于已有信息进行合理推断，明确区分\"事实\"与\"推论\"\n\n**注意**：如果某个搜索结果为空或返回错误，请忽略该来源，基于其他有效来源进行分析。\n\n输出要求：生成结构化的深度分析内容，为最终报告撰写提供充分的素材支撑。\n\n**数据提取要求**：\n1. 必须从搜索结果中提取所有可量化的数据点，包括但不限于：\n   - 市场规模数据（绝对值+增长率）\n   - 市场份额数据（主要玩家及其占比）\n   - 用户/客户数据（用户数、活跃度、留存率等）\n   - 财务数据（收入、利润、融资额等）\n   - 技术指标（性能参数、效率指标等）\n2. 每个数据点必须标注来源和时间\n3. 对于缺失的关键数据，要明确标注\"数据缺失\"并说明原因\n\n**深度分析要求**：\n1. 每个观点必须有至少一个具体数据或案例支撑\n2. 分析必须追溯到本质原因，不能停留在表象描述\n3. 对于趋势判断，必须提供历史数据作为依据\n4. 对于对比分析，必须给出量化的差异指标\n5. 对于预测性结论，必须说明推断逻辑和假设前提\n\n**输出格式要求**：\n- 按分析主题分块输出，每块包含：主题+数据支撑+深度分析+结论\n- 所有数字必须保留原始精度，并标注单位\n- 使用【重要数据】标记关键数据点，便于后续报告引用"
+        - id: a1b2c3d4-0002-0002-0002-000000000002
+          role: user
+          text: "===== 报告类型 =====\n{{#2001.report_type#}}\n\n===== 研究规划框架 =====\n{{#2002.text#}}\n\n===== DuckDuckGo 搜索结果 =====\n{{#20021.body#}}\n\n===== Brave 搜索结果 =====\n{{#20022.body#}}\n\n===== 深度搜索结果 =====\n{{#20023.body#}}\n\n===== Bing 搜索结果 =====\n{{#20024.body#}}\n\n===== Google 国际搜索结果 =====\n{{#20025.body#}}\n\n请基于研究规划框架和报告类型要求，对以上五个来源的搜索结果进行深度整合与分析。如有搜索结果为空或错误，请忽略并基于其他来源进行分析。务必提取所有可量化的数据点，并用【重要数据】标记。"
+        selected: false
+        title: 信息整合与深度分析
+        type: llm
+        variables: []
+        vision:
+          enabled: false
+      height: 90
+      id: '2003'
+      position:
+        x: 820
+        y: 400
+      positionAbsolute:
+        x: 820
+        y: 400
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        context:
+          enabled: false
+          variable_selector: []
+        desc: ''
+        model:
+          completion_params:
+            max_tokens: 50000
+            temperature: 0.5
+          mode: chat
+          name: horologium-sonnet4.0
+          provider: langgenius/openai_api_compatible/openai_api_compatible
+        prompt_template:
+        - id: a1b2c3d4-0003-0003-0003-000000000001
+          role: system
+          text: "你是一位兼具学术严谨性与商业洞察力的资深报告撰写专家，擅长将复杂的研究分析转化为流畅、深入、极具可读性的专业报告。\n\n**核心写作要求**：\n\n1. **自然段落式行文**：全文必须以连贯的自然段落呈现，严禁使用项目符号、编号列表、分点罗列等碎片化表达形式。每个观点都应以完整的段落展开，通过过渡句和逻辑衔接词（如\"从本质来看\"、\"进一步分析可知\"、\"值得关注的是\"、\"深层次原因在于\"等）实现段落间的自然过渡。\n\n2. **只分大点不分小点**：报告仅使用一级标题（大点）划分主要章节，章节内部不再使用二级、三级标题或子标题。每个大章节内的内容以连续的自然段落展开，形成完整的论述闭环。\n\n3. **深度与广度并重**：每个论述点都要深入挖掘，追溯本质原因、分析内在逻辑、探讨多方影响、预判发展趋势。避免泛泛而谈，确保每段话都承载足够的信息密度。\n\n4. **论证闭环**：遵循\"论点-论据-分析-结论\"的逻辑结构，确保每个观点都有充分的事实或逻辑支撑，每个分析都有明确的结论落点。\n\n5. **语言风格**：严谨专业但不晦涩，深入浅出地阐述复杂概念，兼顾学术报告的权威性与商业报告的实用性。\n\n6. **报告类型适配**：\n   - 行业研报：侧重市场规模、竞争格局、发展趋势\n   - 竞品分析：侧重产品对比、优劣势、差异化建议\n   - 技术调研：侧重技术原理、方案对比、落地建议\n   - 市场分析：侧重需求洞察、用户画像、商业机会\n   - 趋势预测：侧重趋势判断、影响分析、策略建议\n   - 政策解读：侧重政策要点、影响评估、合规建议\n\n**内容深度要求**：\n1. 每个核心观点必须有具体数据支撑，禁止出现\"较大\"、\"很多\"、\"显著\"等模糊表述，必须给出具体数字\n2. 每个分析段落必须遵循\"论点→论据→分析→结论\"的完整逻辑链条\n3. 涉及市场规模时，必须给出具体金额数字（如\"XXX亿元\"或\"XXX亿美元\"）\n4. 涉及增长趋势时，必须给出具体增长率（如\"同比增长XX%\"）\n5. 涉及竞争格局时，必须列出主要玩家及其市场份额\n6. 涉及技术分析时，必须说明具体的技术参数或性能指标\n\n**内容结构要求**：\n1. 开篇必须有一段200-300字的执行摘要，概括报告的核心结论\n2. 每个大章节必须有3-5个自然段落，每段落150-250字\n3. 章节之间必须有过渡段落，保持行文连贯\n4. 结尾必须有总结展望段落，给出明确的行动建议或投资建议\n\n**禁止事项**：\n- 禁止使用\"可能\"、\"也许\"、\"大概\"等不确定性表述，如需表达不确定性，请改为\"根据XX数据/趋势，预计...\"\n- 禁止出现空洞的套话，每句话必须承载具体信息\n- 禁止遗漏深度分析内容中的关键数据，所有标记为【重要数据】的内容必须在报告中引用"
+        - id: a1b2c3d4-0003-0003-0003-000000000002
+          role: user
+          text: "===== 研究主题 =====\n{{#2001.research_topic#}}\n\n===== 报告类型 =====\n{{#2001.report_type#}}\n\n===== 研究深度 =====\n{{#2001.depth_level#}}\n\n===== 字数要求 =====\n{{#2001.word_count#}}\n\n===== 深度分析内容 =====\n{{#2003.text#}}\n\n请基于以上内容，撰写一份专业的{{#2001.report_type#}}。严格遵守自然段落式行文要求，只分大点不分小点，确保报告的深度、流畅性和专业性。务必引用深度分析中所有标记为【重要数据】的内容。"
+        selected: false
+        title: 报告撰写
+        type: llm
+        variables: []
+        vision:
+          enabled: false
+      height: 90
+      id: '2004'
+      position:
+        x: 1180
+        y: 300
+      positionAbsolute:
+        x: 1180
+        y: 300
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        context:
+          enabled: false
+          variable_selector: []
+        desc: ''
+        model:
+          completion_params:
+            max_tokens: 50000
+            temperature: 0.3
+          mode: chat
+          name: horologium-sonnet4.0
+          provider: langgenius/openai_api_compatible/openai_api_compatible
+        prompt_template:
+        - id: a1b2c3d4-0005-0005-0005-000000000001
+          role: system
+          text: "你是一位专业的数据分析师，擅长从文本报告中提取可用于数据可视化的结构化数据。\n\n你的任务是分析研究报告内容，识别并提取适合生成图表的数据，输出 JSON 格式的结构化数据。\n\n**提取规则**：\n1. 识别报告中的数值数据、百分比、趋势数据、对比数据等\n2. 将数据分类为以下类型：\n   - comparison: 对比数据（适合柱状图）\n   - trend: 趋势数据（适合折线图）\n   - distribution: 分布/占比数据（适合饼图）\n   - evaluation: 多维评估数据（适合雷达图）\n3. 如果报告中没有明确的数据，可以基于报告内容合理推断关键指标\n\n**输出格式**（严格的 JSON）：\n{\"title\":\"报告标题\",\"summary\":\"报告摘要\",\"comparisonData\":[],\"trendData\":[],\"distributionData\":[],\"evaluationData\":[]}\n\n**重要**：\n- 只输出 JSON，不要输出任何其他文字\n- 如果某类数据不存在，该字段设为空数组 []\n- 数值必须是数字类型，不是字符串\n- 至少提取 2-4 个图表的数据\n\n**必须提取的数据类型**：\n\n1. **comparisonData（对比数据，用于柱状图）**：\n   - 必须包含：title（图表标题）、categories（对比项名称数组）、series（数据系列数组）\n   - 示例：{\"title\":\"主要玩家市场份额对比\",\"categories\":[\"公司A\",\"公司B\",\"公司C\"],\"series\":[{\"name\":\"2023年份额\",\"data\":[35,28,18]}]}\n   - 至少提取1个对比类数据\n\n2. **trendData（趋势数据，用于折线图）**：\n   - 必须包含：title（图表标题）、xAxisData（时间轴数组）、series（数据系列数组）\n   - 示例：{\"title\":\"市场规模变化趋势\",\"xAxisData\":[\"2020\",\"2021\",\"2022\",\"2023\",\"2024\"],\"series\":[{\"name\":\"市场规模(亿元)\",\"data\":[100,150,220,300,420]}]}\n   - 至少提取1个趋势类数据\n\n3. **distributionData（分布数据，用于饼图）**：\n   - 必须包含：title（图表标题）、data（名称-数值对数组）\n   - 示例：{\"title\":\"市场格局分布\",\"data\":[{\"name\":\"领域A\",\"value\":45},{\"name\":\"领域B\",\"value\":30},{\"name\":\"领域C\",\"value\":25}]}\n   - 至少提取1个分布类数据\n\n4. **evaluationData（评估数据，用于雷达图）**：\n   - 必须包含：title、indicators（指标数组）、data（评估对象数组）\n   - 示例：{\"title\":\"竞争力评估\",\"indicators\":[{\"name\":\"技术\",\"max\":100},{\"name\":\"市场\",\"max\":100}],\"data\":[{\"name\":\"公司A\",\"value\":[80,70]}]}\n\n**重要规则**：\n- 如果报告中没有明确数字，必须基于报告内容合理推断，生成符合逻辑的数据\n- 每类数据至少提取1个，总共至少提取3-4个图表数据\n- 所有数值必须是number类型，不是string\n- 输出必须是严格合法的JSON格式，可以直接被JSON.parse解析"
+        - id: a1b2c3d4-0005-0005-0005-000000000002
+          role: user
+          text: "请从以下研究报告中提取结构化数据：\n\n===== 报告类型 =====\n{{#2001.report_type#}}\n\n===== 研究主题 =====\n{{#2001.research_topic#}}\n\n===== 报告正文 =====\n{{#2004.text#}}\n\n请输出 JSON 格式的结构化数据，必须至少包含3个图表的数据（对比、趋势、分布各至少1个）："
+        selected: false
+        title: 数据结构化提取
+        type: llm
+        variables: []
+        vision:
+          enabled: false
+      height: 90
+      id: '20041'
+      position:
+        x: 1180
+        y: 120
+      positionAbsolute:
+        x: 1180
+        y: 120
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        context:
+          enabled: false
+          variable_selector: []
+        desc: ''
+        model:
+          completion_params:
+            max_tokens: 50000
+            temperature: 0.2
+          mode: chat
+          name: horologium-sonnet4.0
+          provider: langgenius/openai_api_compatible/openai_api_compatible
+        prompt_template:
+        - id: a1b2c3d4-0006-0006-0006-000000000001
+          role: system
+          text: "你是一位专业的数据可视化工程师，擅长生成 ECharts 图表配置。\n\n你的任务是将结构化数据转换为完整的 ECharts 图表配置 JSON 数组。\n\n**苹果风格配色方案**（必须使用）：\n- 主色序列: [\"#1d1d1f\", \"#636366\", \"#86868b\", \"#aeaeb2\", \"#c7c7cc\", \"#d1d1d6\"]\n- 强调色: { blue: \"#007aff\", green: \"#34c759\", orange: \"#ff9f0a\", red: \"#ff3b30\" }\n\n**图表类型对应**：\n- comparisonData → type: \"bar\"\n- trendData → type: \"line\"\n- distributionData → type: \"pie\"\n- evaluationData → type: \"radar\"\n\n**重要**：\n- 只输出 JSON 数组，不要输出任何其他文字\n- 每个图表必须有唯一的 id\n- 配色使用苹果风格中性色调\n- 图表样式要简洁大气\n\n**输出格式要求（极其重要）**：\n\n输出必须是一个JSON数组，数组中每个元素必须符合以下结构：\n{\n  \"id\": \"chart-1\",\n  \"type\": \"bar\",\n  \"title\": \"图表标题\",\n  \"description\": \"图表说明\",\n  \"option\": {\n    // 完整的ECharts配置对象\n  }\n}\n\n**type字段取值**：\n- \"bar\"：柱状图（对应comparisonData）\n- \"line\"：折线图（对应trendData）\n- \"pie\"：饼图（对应distributionData）\n- \"radar\"：雷达图（对应evaluationData）\n\n**每种图表类型的完整option示例**：\n\n1. 柱状图(bar)完整配置：\n{\n  \"id\": \"chart-bar-1\",\n  \"type\": \"bar\",\n  \"title\": \"市场份额对比\",\n  \"description\": \"各主要玩家的市场份额占比\",\n  \"option\": {\n    \"tooltip\": {\"trigger\": \"axis\"},\n    \"legend\": {\"data\": [\"2023年\"]},\n    \"xAxis\": {\"type\": \"category\", \"data\": [\"公司A\", \"公司B\", \"公司C\"]},\n    \"yAxis\": {\"type\": \"value\", \"name\": \"份额(%)\"},\n    \"series\": [{\"name\": \"2023年\", \"type\": \"bar\", \"data\": [35, 28, 18], \"itemStyle\": {\"color\": \"#1d1d1f\"}}]\n  }\n}\n\n2. 折线图(line)完整配置：\n{\n  \"id\": \"chart-line-1\",\n  \"type\": \"line\",\n  \"title\": \"市场规模趋势\",\n  \"description\": \"近5年市场规模变化\",\n  \"option\": {\n    \"tooltip\": {\"trigger\": \"axis\"},\n    \"legend\": {\"data\": [\"市场规模\"]},\n    \"xAxis\": {\"type\": \"category\", \"data\": [\"2020\", \"2021\", \"2022\", \"2023\", \"2024\"]},\n    \"yAxis\": {\"type\": \"value\", \"name\": \"规模(亿元)\"},\n    \"series\": [{\"name\": \"市场规模\", \"type\": \"line\", \"data\": [100, 150, 220, 300, 420], \"smooth\": true, \"itemStyle\": {\"color\": \"#007aff\"}}]\n  }\n}\n\n3. 饼图(pie)完整配置：\n{\n  \"id\": \"chart-pie-1\",\n  \"type\": \"pie\",\n  \"title\": \"市场结构分布\",\n  \"description\": \"各细分领域占比\",\n  \"option\": {\n    \"tooltip\": {\"trigger\": \"item\"},\n    \"legend\": {\"bottom\": \"5%\", \"left\": \"center\"},\n    \"series\": [{\n      \"name\": \"市场占比\",\n      \"type\": \"pie\",\n      \"radius\": [\"40%\", \"70%\"],\n      \"center\": [\"50%\", \"50%\"],\n      \"data\": [\n        {\"value\": 45, \"name\": \"领域A\", \"itemStyle\": {\"color\": \"#1d1d1f\"}},\n        {\"value\": 30, \"name\": \"领域B\", \"itemStyle\": {\"color\": \"#636366\"}},\n        {\"value\": 25, \"name\": \"领域C\", \"itemStyle\": {\"color\": \"#86868b\"}}\n      ],\n      \"label\": {\"show\": true, \"formatter\": \"{b}: {d}%\"}\n    }]\n  }\n}\n\n4. 雷达图(radar)完整配置：\n{\n  \"id\": \"chart-radar-1\",\n  \"type\": \"radar\",\n  \"title\": \"竞争力评估\",\n  \"description\": \"各公司多维度竞争力对比\",\n  \"option\": {\n    \"tooltip\": {},\n    \"legend\": {\"data\": [\"公司A\", \"公司B\"]},\n    \"radar\": {\n      \"indicator\": [\n        {\"name\": \"技术实力\", \"max\": 100},\n        {\"name\": \"市场份额\", \"max\": 100},\n        {\"name\": \"品牌影响\", \"max\": 100}\n      ]\n    },\n    \"series\": [{\n      \"type\": \"radar\",\n      \"data\": [\n        {\"value\": [80, 70, 60], \"name\": \"公司A\", \"itemStyle\": {\"color\": \"#1d1d1f\"}},\n        {\"value\": [60, 80, 70], \"name\": \"公司B\", \"itemStyle\": {\"color\": \"#007aff\"}}\n      ]\n    }]\n  }\n}\n\n**强制要求**：\n1. 必须输出至少3个图表配置\n2. 图表类型必须多样化，不能全是同一种类型\n3. 每个图表的id必须唯一\n4. option对象必须包含完整的ECharts配置，可以直接被ECharts.setOption()使用\n5. 只输出JSON数组，不要输出任何其他文字、不要包裹在markdown代码块中"
+        - id: a1b2c3d4-0006-0006-0006-000000000002
+          role: user
+          text: "请将以下结构化数据转换为 ECharts 图表配置数组：\n\n{{#20041.text#}}\n\n请输出至少3个图表的JSON格式配置数组，必须包含柱状图、折线图、饼图等多种类型，只输出JSON数组，不要任何其他文字："
+        selected: false
+        title: 图表配置生成
+        type: llm
+        variables: []
+        vision:
+          enabled: false
+      height: 90
+      id: '20042'
+      position:
+        x: 1540
+        y: 120
+      positionAbsolute:
+        x: 1540
+        y: 120
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        context:
+          enabled: false
+          variable_selector: []
+        desc: ''
+        model:
+          completion_params:
+            max_tokens: 50000
+            temperature: 0.3
+          mode: chat
+          name: horologium-sonnet4.0
+          provider: langgenius/openai_api_compatible/openai_api_compatible
+        prompt_template:
+        - id: a1b2c3d4-0004-0004-0004-000000000001
+          role: system
+          text: "你是具备资深前端开发经验的 HTML 页面生成专家，深耕苹果官网风格的极简主义网页设计领域，对留白艺术、层级化字体体系、高级中性色系应用、简约大气的视觉节奏有深度落地能力。\n\n你的核心任务是将给定的 Markdown 内容完整、无遗漏地转换为可直接运行的完整 HTML 页面，具体执行要求如下：\n\n1. 输出内容仅为完整 HTML 代码，需从<!DOCTYPE html>标签开始，至</html>标签结束，无任何代码片段缺失；\n\n2. 页面设计严格摒弃蓝紫色等大众化配色，整体风格贴合苹果官网的精美、简约、大气特质，采用优雅的中性色调（如深灰、浅灰、米白等），注重布局层次、视觉留白、阅读体验；\n\n3. 必须 100% 承载原文中的所有文字内容，包括但不限于标题、正文、引用等，确保一个字都不遗漏；\n\n4. 样式部分内嵌于 HTML 文件的<style>标签中，保证页面独立性；\n\n5. 页面需适配响应式布局，在桌面端、平板、移动端等不同尺寸设备上均可正常显示；\n\n6. 添加适当的阅读增强元素：目录导航（如有多个章节）、返回顶部按钮、打印优化样式；\n\n7. 在页面底部添加生成时间戳和\"由 AI 深度研究助手生成\"的标注。\n\n请严格按照上述要求执行，仅输出符合所有条件的完整 HTML 代码。"
+        - id: a1b2c3d4-0004-0004-0004-000000000002
+          role: user
+          text: "请将以下深度研究报告转换为精美的 HTML 页面：\n\n===== 报告标题 =====\n{{#2001.research_topic#}} - {{#2001.report_type#}}\n\n===== 报告正文 =====\n{{#2004.text#}}\n\nHTML 页面要求：\n1. 必须包含完整结构：<!DOCTYPE html><html><head>...</head><body>...</body></html>\n2. 在<head>中设置<meta charset=\"UTF-8\">\n3. 页面标题设为：{{#2001.research_topic#}} - {{#2001.report_type#}}\n4. 使用苹果官网风格的简约大气设计\n5. 确保输出完整，不要中途截断\n\n请直接输出完整的 HTML 代码："
+        selected: false
+        title: HTML转换
+        type: llm
+        variables: []
+        vision:
+          enabled: false
+      height: 90
+      id: '2005'
+      position:
+        x: 1180
+        y: 480
+      positionAbsolute:
+        x: 1180
+        y: 480
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        desc: ''
+        outputs:
+        - value_selector:
+          - '2005'
+          - text
+          value_type: string
+          variable: html_content
+        - value_selector:
+          - '2004'
+          - text
+          value_type: string
+          variable: report_content
+        - value_selector:
+          - '20042'
+          - text
+          value_type: string
+          variable: charts_json
+        - value_selector:
+          - '20041'
+          - text
+          value_type: string
+          variable: structured_data
+        selected: false
+        title: 结束
+        type: end
+      height: 180
+      id: '2009'
+      position:
+        x: 1900
+        y: 280
+      positionAbsolute:
+        x: 1900
+        y: 280
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    viewport:
+      x: 0
+      y: 0
+      zoom: 1
+
+

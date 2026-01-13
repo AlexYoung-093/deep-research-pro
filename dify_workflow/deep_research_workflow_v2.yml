@@ -1,0 +1,854 @@
+app:
+  description: 深度研究报告自动生成工作流 V2 - 多源信息抓取、深度分析、数据可视化、自然段落报告输出
+  icon: 📚
+  icon_background: '#E3F2FD'
+  mode: workflow
+  name: Deep_Research_Report_Generator_V2
+  use_icon_as_answer_icon: false
+dependencies:
+- current_identifier: null
+  type: marketplace
+  value:
+    marketplace_plugin_unique_identifier: langgenius/openai_api_compatible:0.0.21@f46f21a207621f8ec5e5ef250e118a23d479c7a6ae2fe690823bae9d49d015fa
+kind: app
+version: 0.3.1
+workflow:
+  conversation_variables: []
+  environment_variables:
+  - id: jina_api_key
+    name: JINA_API_KEY
+    value: jina_6c38045e42fd431d9ae42fbc98119c4e3EwlsS6LafhcIiZjFiki4xKq5OMl
+    value_type: secret
+  features:
+    file_upload:
+      allowed_file_extensions: []
+      allowed_file_types: []
+      allowed_file_upload_methods:
+      - local_file
+      - remote_url
+      enabled: false
+      fileUploadConfig:
+        audio_file_size_limit: 50
+        batch_count_limit: 5
+        file_size_limit: 15
+        image_file_size_limit: 10
+        video_file_size_limit: 100
+        workflow_file_upload_limit: 10
+      image:
+        enabled: false
+        number_limits: 3
+        transfer_methods:
+        - local_file
+        - remote_url
+      number_limits: 3
+    opening_statement: ''
+    retriever_resource:
+      enabled: true
+    sensitive_word_avoidance:
+      enabled: false
+    speech_to_text:
+      enabled: false
+    suggested_questions: []
+    suggested_questions_after_answer:
+      enabled: false
+    text_to_speech:
+      enabled: false
+      language: ''
+      voice: ''
+  graph:
+    edges:
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: start
+        targetType: llm
+      id: 2001-source-2002-target
+      source: '2001'
+      sourceHandle: source
+      target: '2002'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: start
+        targetType: http-request
+      id: 2001-source-20021-target
+      source: '2001'
+      sourceHandle: source
+      target: '20021'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: start
+        targetType: http-request
+      id: 2001-source-20022-target
+      source: '2001'
+      sourceHandle: source
+      target: '20022'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: start
+        targetType: http-request
+      id: 2001-source-20023-target
+      source: '2001'
+      sourceHandle: source
+      target: '20023'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: llm
+        targetType: llm
+      id: 2002-source-2003-target
+      source: '2002'
+      sourceHandle: source
+      target: '2003'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: http-request
+        targetType: llm
+      id: 20021-source-2003-target
+      source: '20021'
+      sourceHandle: source
+      target: '2003'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: http-request
+        targetType: llm
+      id: 20022-source-2003-target
+      source: '20022'
+      sourceHandle: source
+      target: '2003'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: http-request
+        targetType: llm
+      id: 20023-source-2003-target
+      source: '20023'
+      sourceHandle: source
+      target: '2003'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: llm
+        targetType: llm
+      id: 2003-source-2004-target
+      source: '2003'
+      sourceHandle: source
+      target: '2004'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: llm
+        targetType: llm
+      id: 2004-source-20041-target
+      source: '2004'
+      sourceHandle: source
+      target: '20041'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: llm
+        targetType: llm
+      id: 20041-source-20042-target
+      source: '20041'
+      sourceHandle: source
+      target: '20042'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: llm
+        targetType: llm
+      id: 2004-source-2005-target
+      source: '2004'
+      sourceHandle: source
+      target: '2005'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: llm
+        targetType: end
+      id: 2005-source-2009-target
+      source: '2005'
+      sourceHandle: source
+      target: '2009'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: llm
+        targetType: end
+      id: 20042-source-2009-target
+      source: '20042'
+      sourceHandle: source
+      target: '2009'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    nodes:
+    - data:
+        desc: ''
+        selected: false
+        title: 开始
+        type: start
+        variables:
+        - label: 研究主题/方向
+          max_length: 256
+          options: []
+          required: true
+          type: text-input
+          variable: research_topic
+        - label: 报告类型
+          max_length: 64
+          options:
+          - 行业研报
+          - 竞品分析
+          - 技术调研
+          - 市场分析
+          - 趋势预测
+          - 政策解读
+          required: true
+          type: select
+          variable: report_type
+        - label: 研究深度
+          max_length: 64
+          options:
+          - 深度研究
+          - 中度分析
+          - 快速概览
+          required: true
+          type: select
+          variable: depth_level
+        - label: 报告字数要求
+          max_length: 64
+          options:
+          - 1500字
+          - 3000字
+          - 5000字
+          - 8000字
+          required: true
+          type: select
+          variable: word_count
+      height: 200
+      id: '2001'
+      position:
+        x: 80
+        y: 280
+      positionAbsolute:
+        x: 80
+        y: 280
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        authorization:
+          config: null
+          type: no-auth
+        body:
+          data:
+          - type: text
+            value: ''
+          type: none
+        desc: 抓取 DuckDuckGo 搜索结果
+        headers: ''
+        method: get
+        params: ''
+        retry_config:
+          max_retries: 3
+          retry_enabled: true
+          retry_interval: 1000
+        selected: false
+        ssl_verify: true
+        timeout:
+          connect: 30
+          read: 120
+          write: 30
+        title: HTTP抓取-DuckDuckGo
+        type: http-request
+        url: https://r.jina.ai/https://duckduckgo.com/?q={{#2001.research_topic#}}
+      height: 159
+      id: '20021'
+      position:
+        x: 460
+        y: 80
+      positionAbsolute:
+        x: 460
+        y: 80
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        authorization:
+          config: null
+          type: no-auth
+        body:
+          data:
+          - type: text
+            value: ''
+          type: none
+        desc: 抓取 Brave Search 搜索结果
+        headers: ''
+        method: get
+        params: ''
+        retry_config:
+          max_retries: 3
+          retry_enabled: true
+          retry_interval: 1000
+        selected: false
+        ssl_verify: true
+        timeout:
+          connect: 30
+          read: 120
+          write: 30
+        title: HTTP抓取-Brave
+        type: http-request
+        url: https://r.jina.ai/https://search.brave.com/search?q={{#2001.research_topic#}}
+      height: 159
+      id: '20022'
+      position:
+        x: 460
+        y: 280
+      positionAbsolute:
+        x: 460
+        y: 280
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        authorization:
+          config: null
+          type: no-auth
+        body:
+          data:
+          - type: text
+            value: ''
+          type: none
+        desc: 抓取 DuckDuckGo 深度搜索结果
+        headers: ''
+        method: get
+        params: ''
+        retry_config:
+          max_retries: 3
+          retry_enabled: true
+          retry_interval: 1000
+        selected: false
+        ssl_verify: true
+        timeout:
+          connect: 30
+          read: 120
+          write: 30
+        title: HTTP抓取-DuckDuckGo深度
+        type: http-request
+        url: https://r.jina.ai/https://duckduckgo.com/?q={{#2001.research_topic#}}+研究报告+行业分析
+      height: 159
+      id: '20023'
+      position:
+        x: 460
+        y: 480
+      positionAbsolute:
+        x: 460
+        y: 480
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        context:
+          enabled: false
+          variable_selector: []
+        desc: ''
+        model:
+          completion_params:
+            max_tokens: 8192
+            temperature: 0.7
+          mode: chat
+          name: horologium-sonnet4.0
+          provider: langgenius/openai_api_compatible/openai_api_compatible
+        prompt_template:
+        - id: a1b2c3d4-0001-0001-0001-000000000001
+          role: system
+          text: '你是一位资深的研究规划专家，擅长将模糊的研究方向转化为结构化、可执行的研究框架。
+
+            你的任务是根据用户提供的研究主题和报告类型，进行以下工作：
+
+            1. 深度解析研究主题的核心内涵、边界范围和关键切入点
+            2. 识别该主题涉及的核心概念、关键术语和重要维度
+            3. 规划研究的逻辑框架，明确需要回答的核心问题
+            4. 设计信息收集策略，指出需要关注的信息类型和来源方向
+
+            **报告类型说明**：
+            - 行业研报：关注行业规模、市场格局、主要玩家、发展趋势
+            - 竞品分析：关注竞争对手、产品对比、优劣势分析、差异化策略
+            - 技术调研：关注技术原理、实现方案、技术对比、落地难点
+            - 市场分析：关注市场需求、用户画像、商业模式、增长潜力
+            - 趋势预测：关注行业动向、技术演进、政策影响、未来预判
+            - 政策解读：关注政策内容、影响分析、合规要求、应对策略
+
+            输出要求：以清晰的结构化文本呈现研究规划，为后续的信息整合和深度分析提供明确指引。'
+        - id: a1b2c3d4-0001-0001-0001-000000000002
+          role: user
+          text: '研究主题：{{#2001.research_topic#}}
+
+            报告类型：{{#2001.report_type#}}
+
+            研究深度：{{#2001.depth_level#}}
+
+            字数要求：{{#2001.word_count#}}
+
+            请为这个研究主题制定详细的研究规划框架。'
+        selected: false
+        title: 研究规划
+        type: llm
+        variables: []
+        vision:
+          enabled: false
+      height: 90
+      id: '2002'
+      position:
+        x: 460
+        y: 680
+      positionAbsolute:
+        x: 460
+        y: 680
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        context:
+          enabled: false
+          variable_selector: []
+        desc: ''
+        model:
+          completion_params:
+            max_tokens: 16384
+            temperature: 0.6
+          mode: chat
+          name: horologium-sonnet4.0
+          provider: langgenius/openai_api_compatible/openai_api_compatible
+        prompt_template:
+        - id: a1b2c3d4-0002-0002-0002-000000000001
+          role: system
+          text: '你是一位具备跨领域知识整合能力和批判性思维的资深研究分析师。你的核心任务是对多源信息进行深度整合、交叉验证和系统性分析。
+
+            在处理信息时，你需要：
+
+            1. **信息筛选与提炼**：从原始搜索结果中识别高价值信息，过滤噪音和重复内容，提取核心事实、数据和观点
+
+            2. **交叉验证**：对比不同来源的信息一致性，标注存在分歧或不确定的内容，优先采信权威来源
+
+            3. **深度分析框架**：
+               - 现象层：当前状态、表现形式、主要特征
+               - 本质层：核心原因、内在逻辑、驱动因素
+               - 关联层：上下游影响、相关领域联动、利益相关方
+               - 趋势层：发展方向、潜在变化、未来预判
+               - 风险层：不确定因素、潜在风险、关键变量
+
+            4. **多视角审视**：从技术、商业、社会、政策等多个维度进行立体分析
+
+            5. **逻辑推演**：基于已有信息进行合理推断，明确区分"事实"与"推论"
+
+            **注意**：如果某个搜索结果为空或返回错误，请忽略该来源，基于其他有效来源进行分析。
+
+            输出要求：生成结构化的深度分析内容，为最终报告撰写提供充分的素材支撑。'
+        - id: a1b2c3d4-0002-0002-0002-000000000002
+          role: user
+          text: '===== 报告类型 =====
+            {{#2001.report_type#}}
+
+            ===== 研究规划框架 =====
+            {{#2002.text#}}
+
+            ===== DuckDuckGo 搜索结果 =====
+            {{#20021.body#}}
+
+            ===== Brave 搜索结果 =====
+            {{#20022.body#}}
+
+            ===== DuckDuckGo 深度搜索结果 =====
+            {{#20023.body#}}
+
+            请基于研究规划框架和报告类型要求，对以上多源搜索结果进行深度整合与分析。如有搜索结果为空或错误，请忽略并基于其他来源进行分析。'
+        selected: false
+        title: 信息整合与深度分析
+        type: llm
+        variables: []
+        vision:
+          enabled: false
+      height: 90
+      id: '2003'
+      position:
+        x: 820
+        y: 280
+      positionAbsolute:
+        x: 820
+        y: 280
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        context:
+          enabled: false
+          variable_selector: []
+        desc: ''
+        model:
+          completion_params:
+            max_tokens: 32768
+            temperature: 0.5
+          mode: chat
+          name: horologium-sonnet4.0
+          provider: langgenius/openai_api_compatible/openai_api_compatible
+        prompt_template:
+        - id: a1b2c3d4-0003-0003-0003-000000000001
+          role: system
+          text: '你是一位兼具学术严谨性与商业洞察力的资深报告撰写专家，擅长将复杂的研究分析转化为流畅、深入、极具可读性的专业报告。
+
+            **核心写作要求**：
+
+            1. **自然段落式行文**：全文必须以连贯的自然段落呈现，严禁使用项目符号、编号列表、分点罗列等碎片化表达形式。每个观点都应以完整的段落展开，通过过渡句和逻辑衔接词（如"从本质来看"、"进一步分析可知"、"值得关注的是"、"深层次原因在于"等）实现段落间的自然过渡。
+
+            2. **只分大点不分小点**：报告仅使用一级标题（大点）划分主要章节，章节内部不再使用二级、三级标题或子标题。每个大章节内的内容以连续的自然段落展开，形成完整的论述闭环。
+
+            3. **深度与广度并重**：每个论述点都要深入挖掘，追溯本质原因、分析内在逻辑、探讨多方影响、预判发展趋势。避免泛泛而谈，确保每段话都承载足够的信息密度。
+
+            4. **论证闭环**：遵循"论点-论据-分析-结论"的逻辑结构，确保每个观点都有充分的事实或逻辑支撑，每个分析都有明确的结论落点。
+
+            5. **语言风格**：严谨专业但不晦涩，深入浅出地阐述复杂概念，兼顾学术报告的权威性与商业报告的实用性。
+
+            6. **报告类型适配**：
+               - 行业研报：侧重市场规模、竞争格局、发展趋势
+               - 竞品分析：侧重产品对比、优劣势、差异化建议
+               - 技术调研：侧重技术原理、方案对比、落地建议
+               - 市场分析：侧重需求洞察、用户画像、商业机会
+               - 趋势预测：侧重趋势判断、影响分析、策略建议
+               - 政策解读：侧重政策要点、影响评估、合规建议'
+        - id: a1b2c3d4-0003-0003-0003-000000000002
+          role: user
+          text: '===== 研究主题 =====
+            {{#2001.research_topic#}}
+
+            ===== 报告类型 =====
+            {{#2001.report_type#}}
+
+            ===== 研究深度 =====
+            {{#2001.depth_level#}}
+
+            ===== 字数要求 =====
+            {{#2001.word_count#}}
+
+            ===== 深度分析内容 =====
+            {{#2003.text#}}
+
+            请基于以上内容，撰写一份专业的{{#2001.report_type#}}。严格遵守自然段落式行文要求，只分大点不分小点，确保报告的深度、流畅性和专业性。'
+        selected: false
+        title: 报告撰写
+        type: llm
+        variables: []
+        vision:
+          enabled: false
+      height: 90
+      id: '2004'
+      position:
+        x: 1180
+        y: 200
+      positionAbsolute:
+        x: 1180
+        y: 200
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        context:
+          enabled: false
+          variable_selector: []
+        desc: ''
+        model:
+          completion_params:
+            max_tokens: 8192
+            temperature: 0.3
+          mode: chat
+          name: horologium-sonnet4.0
+          provider: langgenius/openai_api_compatible/openai_api_compatible
+        prompt_template:
+        - id: a1b2c3d4-0005-0005-0005-000000000001
+          role: system
+          text: '你是一位专业的数据分析师，擅长从文本报告中提取可用于数据可视化的结构化数据。
+
+            你的任务是分析研究报告内容，识别并提取适合生成图表的数据，输出 JSON 格式的结构化数据。
+
+            **提取规则**：
+            1. 识别报告中的数值数据、百分比、趋势数据、对比数据等
+            2. 将数据分类为以下类型：
+               - comparison: 对比数据（适合柱状图）
+               - trend: 趋势数据（适合折线图）
+               - distribution: 分布/占比数据（适合饼图）
+               - evaluation: 多维评估数据（适合雷达图）
+            3. 如果报告中没有明确的数据，可以基于报告内容合理推断关键指标
+
+            **输出格式**（严格的 JSON）：
+            {"title":"报告标题","summary":"报告摘要","comparisonData":[],"trendData":[],"distributionData":[],"evaluationData":[]}
+
+            **重要**：
+            - 只输出 JSON，不要输出任何其他文字
+            - 如果某类数据不存在，该字段设为空数组 []
+            - 数值必须是数字类型，不是字符串
+            - 至少提取 2-4 个图表的数据'
+        - id: a1b2c3d4-0005-0005-0005-000000000002
+          role: user
+          text: '请从以下研究报告中提取结构化数据：
+
+            ===== 报告类型 =====
+            {{#2001.report_type#}}
+
+            ===== 研究主题 =====
+            {{#2001.research_topic#}}
+
+            ===== 报告正文 =====
+            {{#2004.text#}}
+
+            请输出 JSON 格式的结构化数据：'
+        selected: false
+        title: 数据结构化提取
+        type: llm
+        variables: []
+        vision:
+          enabled: false
+      height: 90
+      id: '20041'
+      position:
+        x: 1180
+        y: 80
+      positionAbsolute:
+        x: 1180
+        y: 80
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        context:
+          enabled: false
+          variable_selector: []
+        desc: ''
+        model:
+          completion_params:
+            max_tokens: 16384
+            temperature: 0.2
+          mode: chat
+          name: horologium-sonnet4.0
+          provider: langgenius/openai_api_compatible/openai_api_compatible
+        prompt_template:
+        - id: a1b2c3d4-0006-0006-0006-000000000001
+          role: system
+          text: '你是一位专业的数据可视化工程师，擅长生成 ECharts 图表配置。
+
+            你的任务是将结构化数据转换为完整的 ECharts 图表配置 JSON 数组。
+
+            **苹果风格配色方案**（必须使用）：
+            - 主色序列: ["#1d1d1f", "#636366", "#86868b", "#aeaeb2", "#c7c7cc", "#d1d1d6"]
+            - 强调色: { blue: "#007aff", green: "#34c759", orange: "#ff9f0a", red: "#ff3b30" }
+
+            **图表类型对应**：
+            - comparisonData → type: "bar"
+            - trendData → type: "line"
+            - distributionData → type: "pie"
+            - evaluationData → type: "radar"
+
+            **重要**：
+            - 只输出 JSON 数组，不要输出任何其他文字
+            - 每个图表必须有唯一的 id
+            - 配色使用苹果风格中性色调
+            - 图表样式要简洁大气'
+        - id: a1b2c3d4-0006-0006-0006-000000000002
+          role: user
+          text: '请将以下结构化数据转换为 ECharts 图表配置数组：
+
+            {{#20041.text#}}
+
+            请输出 JSON 格式的图表配置数组：'
+        selected: false
+        title: 图表配置生成
+        type: llm
+        variables: []
+        vision:
+          enabled: false
+      height: 90
+      id: '20042'
+      position:
+        x: 1540
+        y: 80
+      positionAbsolute:
+        x: 1540
+        y: 80
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        context:
+          enabled: false
+          variable_selector: []
+        desc: ''
+        model:
+          completion_params:
+            max_tokens: 43801
+            temperature: 0.3
+          mode: chat
+          name: horologium-sonnet4.0
+          provider: langgenius/openai_api_compatible/openai_api_compatible
+        prompt_template:
+        - id: a1b2c3d4-0004-0004-0004-000000000001
+          role: system
+          text: '你是具备资深前端开发经验的 HTML 页面生成专家，深耕苹果官网风格的极简主义网页设计领域，对留白艺术、层级化字体体系、高级中性色系应用、简约大气的视觉节奏有深度落地能力。
+
+            你的核心任务是将给定的 Markdown 内容完整、无遗漏地转换为可直接运行的完整 HTML 页面，具体执行要求如下：
+
+            1. 输出内容仅为完整 HTML 代码，需从<!DOCTYPE html>标签开始，至</html>标签结束，无任何代码片段缺失；
+
+            2. 页面设计严格摒弃蓝紫色等大众化配色，整体风格贴合苹果官网的精美、简约、大气特质，采用优雅的中性色调（如深灰、浅灰、米白等），注重布局层次、视觉留白、阅读体验；
+
+            3. 必须 100% 承载原文中的所有文字内容，包括但不限于标题、正文、引用等，确保一个字都不遗漏；
+
+            4. 样式部分内嵌于 HTML 文件的<style>标签中，保证页面独立性；
+
+            5. 页面需适配响应式布局，在桌面端、平板、移动端等不同尺寸设备上均可正常显示；
+
+            6. 添加适当的阅读增强元素：目录导航（如有多个章节）、返回顶部按钮、打印优化样式；
+
+            7. 在页面底部添加生成时间戳和"由 AI 深度研究助手生成"的标注。
+
+            请严格按照上述要求执行，仅输出符合所有条件的完整 HTML 代码。'
+        - id: a1b2c3d4-0004-0004-0004-000000000002
+          role: user
+          text: '请将以下深度研究报告转换为精美的 HTML 页面：
+
+            ===== 报告标题 =====
+            {{#2001.research_topic#}} - {{#2001.report_type#}}
+
+            ===== 报告正文 =====
+            {{#2004.text#}}
+
+            HTML 页面要求：
+            1. 必须包含完整结构：<!DOCTYPE html><html><head>...</head><body>...</body></html>
+            2. 在<head>中设置<meta charset="UTF-8">
+            3. 页面标题设为：{{#2001.research_topic#}} - {{#2001.report_type#}}
+            4. 使用苹果官网风格的简约大气设计
+            5. 确保输出完整，不要中途截断
+
+            请直接输出完整的 HTML 代码：'
+        selected: false
+        title: HTML转换
+        type: llm
+        variables: []
+        vision:
+          enabled: false
+      height: 90
+      id: '2005'
+      position:
+        x: 1180
+        y: 360
+      positionAbsolute:
+        x: 1180
+        y: 360
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        desc: ''
+        outputs:
+        - value_selector:
+          - '2005'
+          - text
+          value_type: string
+          variable: html_content
+        - value_selector:
+          - '2004'
+          - text
+          value_type: string
+          variable: report_content
+        - value_selector:
+          - '20042'
+          - text
+          value_type: string
+          variable: charts_json
+        - value_selector:
+          - '20041'
+          - text
+          value_type: string
+          variable: structured_data
+        selected: false
+        title: 结束
+        type: end
+      height: 180
+      id: '2009'
+      position:
+        x: 1900
+        y: 200
+      positionAbsolute:
+        x: 1900
+        y: 200
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    viewport:
+      x: 0
+      y: 0
+      zoom: 1

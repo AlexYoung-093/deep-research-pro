@@ -1,0 +1,9 @@
+name: sse-streaming
+description: Server-Sent Events (SSE) 流式响应处理最佳实践
+version: 1.0.0
+author: Deep Research Pro Team
+tags:
+  - sse
+  - streaming
+  - real-time
+  - api

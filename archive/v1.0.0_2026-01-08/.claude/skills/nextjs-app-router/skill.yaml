@@ -1,0 +1,9 @@
+name: nextjs-app-router
+description: Next.js 14 App Router 最佳实践和模式
+version: 1.0.0
+author: Deep Research Pro Team
+tags:
+  - nextjs
+  - react
+  - app-router
+  - server-components

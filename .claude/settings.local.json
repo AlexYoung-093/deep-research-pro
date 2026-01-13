@@ -1,0 +1,42 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm:*)",
+      "Bash(npx:*)",
+      "Bash(node:*)",
+      "Bash(git:*)",
+      "Bash(pnpm:*)",
+      "Bash(yarn:*)",
+      "Bash(curl:*)",
+      "Bash(mkdir:*)",
+      "Bash(touch:*)",
+      "Bash(cat:*)",
+      "Bash(echo:*)",
+      "Bash(ls:*)",
+      "Bash(cd:*)",
+      "Bash(rm:*)",
+      "Bash(cp:*)",
+      "Bash(mv:*)",
+      "Bash(code:*)",
+      "Read(*)",
+      "Write(*)",
+      "Edit(*)"
+    ],
+    "deny": []
+  },
+  "skills": {
+    "enabled": true,
+    "local_skills_path": ".claude/skills",
+    "installed": [
+      "anthropics/skills",
+      "anthropics/frontend-design",
+      "anthropics/artifacts-builder",
+      "anthropics/canvas-design",
+      "anthropics/mcp-builder",
+      "NakanoSanku/OhMySkills",
+      "obra/superpowers"
+    ]
+  },
+  "enableAllProjectMcpServers": true
+}
+
