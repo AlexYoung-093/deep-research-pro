@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026AI应用、算力行业基金投资分析 - 趋势预测</title>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.8;
+            color: #1d1d1f;
+            background: #ffffff;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 80px;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 24px;
+            }
+        }
+        
+        .header {
+            background: linear-gradient(180deg, #f5f5f7 0%, #ffffff 100%);
+            padding: 80px 0 60px;
+            text-align: center;
+            border-bottom: 1px solid #e5e5e5;
+        }
+        
+        .main-title {
+            font-size: 72px;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 24px;
+            line-height: 1.1;
+        }
+        
+        @media (max-width: 768px) {
+            .main-title {
+                font-size: 48px;
+            }
+        }
+        
+        .subtitle {
+            font-size: 24px;
+            font-weight: 400;
+            color: #86868b;
+            margin-bottom: 16px;
+        }
+        
+        .date {
+            font-size: 16px;
+            color: #aeaeb2;
+        }
+        
+        .content {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            font-size: 36px;
+            font-weight: 600;
+            margin: 80px 0 32px;
+            position: relative;
+            padding-left: 24px;
+        }
+        
+        .section-title::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 4px;
+            height: 100%;
+            background: #007aff;
+        }
+        
+        .executive-summary {
+            background: #f5f5f7;
+            border-radius: 20px;
+            padding: 48px;
+            margin: 48px 0;
+            border-left: 4px solid #34c759;
+            font-size: 20px;
+            font-weight: 500;
+        }
+        
+        .paragraph {
+            font-size: 18px;
+            margin-bottom: 1.5em;
+            text-indent: 2em;
+        }
+        
+        .chart-card {
+            background: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+            border: 1px solid #e5e5e5;
+            padding: 32px;
+            margin: 48px 0;
+        }
+        
+        .chart-intro {
+            color: #636366;
+            font-style: italic;
+            margin-bottom: 16px;
+            font-size: 16px;
+        }
+        
+        .chart-container {
+            width: 100%;
+            height: 450px;
+            border-radius: 16px;
+            margin: 24px 0;
+        }
+        
+        @media (max-width: 768px) {
+            .chart-container {
+                height: 350px;
+            }
+        }
+        
+        .chart-analysis {
+            color: #1d1d1f;
+            background: #f5f5f7;
+            padding: 16px 24px;
+            border-radius: 12px;
+            margin-top: 16px;
+            font-size: 16px;
+        }
+        
+        .footer {
+            border-top: 1px solid #e5e5e5;
+            padding: 48px 0;
+            text-align: center;
+            color: #86868b;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <h1 class="main-title">2026AI应用、算力行业基金投资分析</h1>
+            <div class="subtitle">趋势预测</div>
+            <div class="date">生成时间：2024年12月</div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="container">
+            <div class="executive-summary">
+                <strong>执行摘要：</strong>2026年将成为人工智能产业发展的关键转折点，标志着AI产业从基础设施建设阶段向规模化商业应用阶段的重要跃迁。中国AI应用市场将突破4000亿元人民币，较2024年的1500亿元基准实现年复合增长率60%以上的高速增长。算力行业预计2026年中国AI算力市场将超过2000亿元，较2024年的800亿元基准实现150%的增长幅度。投资策略建议采用多元化配置：算力基础设施配置40%，垂直AI应用配置35%，AI平台服务配置15%，新兴技术配置10%。
+            </div>
+
+            <h2 class="section-title">第一章 行业发展背景与宏观环境分析</h2>
+            
+            <p class="paragraph">人工智能产业的发展已经进入了一个全新的历史阶段，从早期的技术探索和概念验证，逐步演进到当前的规模化应用和商业化落地。2023年被广泛认为是大模型元年，以ChatGPT为代表的生成式AI技术实现了突破性进展，引发了全球范围内的AI技术革命。</p>
+
+            <div class="chart-card">
+                <div class="chart-intro">以下图表展示了2024-2026年AI应用市场规模与算力市场规模的对比增长趋势：</div>
+                <div id="chart1" class="chart-container"></div>
+                <div class="chart-analysis">数据显示，AI应用市场和算力市场都呈现强劲增长态势，其中AI应用市场增长更为迅猛，年复合增长率超过60%，而算力市场也保持了150%的高增长率，两者相互促进，形成良性发展循环。</div>
+            </div>
+
+            <p class="paragraph">从宏观经济环境来看，全球数字化转型的加速为AI产业发展提供了广阔的市场空间。企业数字化转型渗透率预计从当前的35%提升至2026年的65%，这意味着越来越多的传统行业将拥抱AI技术。</p>
+
+            <div class="chart-card">
+                <div class="chart-intro">技术成熟度评估显示各项核心AI技术已接近商业化临界点：</div>
+                <div id="chart2" class="chart-container"></div>
+                <div class="chart-analysis">大语言模型技术成熟度已达4.2分，多模态AI和垂直应用AI也都超过3.8分，表明AI技术已具备大规模商业化部署的基础条件。算力调度技术的快速成熟为规模化应用提供了重要支撑。</div>
+            </div>
+
+            <h2 class="section-title">第二章 AI应用市场规模与增长动力分析</h2>
+
+            <p class="paragraph">AI应用市场正在经历前所未有的快速增长，市场规模的扩张速度超出了大多数分析师的预期。从细分市场结构来看，AI应用市场呈现出多元化发展的特征。</p>
+
+            <div class="chart-card">
+                <div class="chart-intro">AI应用市场细分领域占比结构展现了均衡发展的格局：</div>
+                <div id="chart3" class="chart-container"></div>
+                <div class="chart-analysis">垂直行业应用占据最大份额40%，涵盖金融、医疗、教育、制造等各行业AI解决方案；生成式AI应用占30%，成为增长最迅猛的领域；AI平台服务占30%，提供基础设施支撑。</div>
+            </div>
+
+            <p class="paragraph">增长动力的分析显示，AI应用市场的快速增长主要源于技术能力提升、用户接受度快速提升和商业模式创新三个核心驱动因素。</p>
+
+            <div class="chart-card">
+                <div class="chart-intro">用户付费转化率和企业AI服务渗透率的提升趋势：</div>
+                <div id="chart4" class="chart-container"></div>
+                <div class="chart-analysis">用户付费转化率从2024年的15%大幅提升至2026年的35%，企业级AI服务渗透率从20%跃升至50%，显示出市场对AI应用认知和接受程度的快速提升，为商业化发展奠定了坚实基础。</div>
+            </div>
+
+            <div class="chart-card">
+                <div class="chart-intro">不同地区AI应用市场增长速度对比分析：</div>
+                <div id="chart5" class="chart-container"></div>
+                <div class="chart-analysis">一线城市虽然市场规模最大，但二三线城市增长速度更为迅猛，年增长率达80%以上。这种地域扩散趋势反映了AI技术普及程度的不断提升，为AI企业提供了更广阔的市场空间。</div>
+            </div>
+
+            <h2 class="section-title">第三章 算力行业发展态势与投资机遇</h2>
+
+            <p class="paragraph">算力行业作为AI产业发展的基础支撑，正在经历一轮史无前例的快速发展期。从需求结构来看，算力市场呈现出训练算力和推理算力双轮驱动的发展格局。</p>
+
+            <div class="chart-card">
+                <div class="chart-intro">训练算力与推理算力需求增长对比展现了不同的发展特征：</div>
+                <div id="chart6" class="chart-container"></div>
+                <div class="chart-analysis">推理算力需求增长更为惊人，年增长率达120%，主要得益于AI应用的规模化部署；训练算力需求年增长80%，反映了大模型参数规模扩大和企业自主训练需求的增长。</div>
+            </div>
+
+            <p class="paragraph">算力效率的提升是推动行业发展的重要因素。GPU利用率预计从2024年的40%提升至2026年的70%，这一提升主要得益于算力调度技术的进步和虚拟化技术的应用。</p>
+
+            <div class="chart-card">
+                <div class="chart-intro">算力成本效率优化趋势显示了显著的改善空间：</div>
+                <div id="chart7" class="chart-container"></div>
+                <div class="chart-analysis">单位算力投资成本从10元/FLOPS大幅降至6元/FLOPS，降幅达40%；投资回收周期从36个月缩短至24个月，投资效率显著提升；GPU利用率提升75%，资源利用更加高效。</div>
+            </div>
+
+            <div class="chart-card">
+                <div class="chart-intro">算力产业链各环节的技术自主可控程度评估：</div>
+                <div id="chart8" class="chart-container"></div>
+                <div class="chart-analysis">上游芯片领域自主可控比例从40%大幅提升到70%，为算力供给稳定性提供重要保障。中游平台和下游应用的自主化程度也在快速提升，产业链整体安全性不断增强。</div>
+            </div>
+
+            <h2 class="section-title">第四章 技术创新趋势与产业变革分析</h2>
+
+            <p class="paragraph">技术创新是推动AI应用和算力行业发展的根本动力，当前正处于多项关键技术同步突破的重要时期。模型技术的演进呈现出规模扩大与效率提升并重的趋势。</p>
+
+            <div class="chart-card">
+                <div class="chart-intro">AI技术性能提升指标展现了技术进步的显著成果：</div>
+                <div id="chart9" class="chart-container"></div>
+                <div class="chart-analysis">模型推理速度在2026年较2024年提升300%，训练成本下降70%，能耗比优化50%，这些技术进步直接推动了AI应用的规模化部署和商业化进程的加速。</div>
+            </div>
+
+            <div class="chart-card">
+                <div class="chart-intro">不同AI技术领域的发展成熟度与应用前景评估：</div>
+                <div id="chart10" class="chart-container"></div>
+                <div class="chart-analysis">大语言模型在技术成熟度和商业价值方面都表现突出，多模态AI和边缘AI技术虽然成熟度相对较低，但发展潜力巨大。计算机视觉技术相对成熟但商业价值仍有提升空间。</div>
+            </div>
+
+            <h2 class="section-title">第五章 市场竞争格局与主要参与者分析</h2>
+
+            <p class="paragraph">AI应用和算力行业的竞争格局正在经历深刻的变化，市场集中度呈现出先集中后分散的发展趋势。从竞争层次来看，形成了多层次的竞争格局。</p>
+
+            <div class="chart-card">
+                <div class="chart-intro">AI产业链各层级市场份额变化趋势反映了竞争格局的演进：</div>
+                <div id="chart11" class="chart-container"></div>
+                <div class="chart-analysis">基础设施层仍保持较高集中度，但平台服务层的集中度明显下降，从45%降至35%，应用服务层竞争最为充分。这种变化有利于技术创新和服务质量提升，为中小企业提供更多发展机遇。</div>
+            </div>
+
+            <div class="chart-card">
+                <div class="chart-intro">不同类型AI企业的核心竞争力评估矩阵：</div>
+                <div id="chart12" class="chart-container"></div>
+                <div class="chart-analysis">算力基础设施企业在资本实力方面优势明显，AI平台企业在技术实力和生态建设方面表现突出，垂直应用企业在商业模式创新方面领先，新兴技术企业在创新能力方面具有优势。</div>
+            </div>
+
+            <h2 class="section-title">第六章 投资热点领域与价值评估</h2>
+
+            <p class="paragraph">AI应用和算力行业的投资热点正在发生显著变化，从早期的基础技术投资向应用场景投资转移。根据投资结构分析，算力基础设施投资占总投资的45%，仍然是最大的投资领域。</p>
+
+            <div class="chart-card">
+                <div class="chart-intro">AI投资领域结构分布展现了投资重点的变化：</div>
+                <div id="chart13" class="chart-container"></div>
+                <div class="chart-analysis">算力基础设施投资占比最大达45%，反映了基础设施建设的持续需求；AI应用开发投资占35%，成为增长最快的领域；模型研发投资占20%，虽然占比较小但技术含量高，投资回报潜力巨大。</div>
+            </div>
+
+            <div class="chart-card">
+                <div class="chart-intro">不同投资领域的风险收益特征对比分析：</div>
+                <div id="chart14" class="chart-container"></div>
+                <div class="chart-analysis">垂直AI应用具有最高的成长性，预期收益率35-50%；算力基础设施确定性最高，风险较低；AI平台服务稳定性最佳；新兴技术虽然风险最高，但收益潜力巨大，适合风险承受能力强的投资者。</div>
+            </div>
+
+            <div class="chart-card">
+                <div class="chart-intro">不同投资阶段的风险收益特征矩阵：</div>
+                <div id="chart15" class="chart-container"></div>
+                <div class="chart-analysis">早期投资风险最高但收益潜力巨大，预期收益率可达100-300%；成长期投资风险适中，收益稳定；成熟期投资风险最低，收益确定性高。投资者可根据风险偏好选择合适的投资阶段。</div>
+            </div>
+
+            <h2 class="section-title">第七章 风险因素识别与应对策略</h2>
+
+            <p class="paragraph">AI应用和算力行业在快速发展的同时，也面临着多重风险因素的挑战。根据风险评估分析，需要重点关注技术迭代、市场竞争、国际贸易等关键风险因素。</p>
+
+            <div class="chart-card">
+                <div class="chart-intro">AI行业主要风险因素评估雷达图展现了风险分布特征：</div>
+                <div id="chart16" class="chart-container"></div>
+                <div class="chart-analysis">国际贸易风险评估最高达8分，需重点关注地缘政治影响；市场竞争风险7分，反映竞争激烈程度；技术迭代风险6分，技术更新周期加快；政策监管风险相对较低为5分，政策环境相对稳定。</div>
+            </div>
+
+            <div class="chart-card">
+                <div class="chart-intro">建议的投资组合配置策略能够有效平衡风险与收益：</div>
+                <div id="chart17" class="chart-container"></div>
+                <div class="chart-analysis">算力基础设施配置40%作为稳定收益来源，垂直AI应用配置35%追求高成长，AI平台服务配置15%实现平衡配置，新兴技术配置10%博取高风险高收益，这种配置既能获得稳定收益又能分享高成长收益。</div>
+            </div>
+
+            <h2 class="section-title">第八章 未来发展趋势与投资建议</h2>
+
+            <p class="paragraph">基于对AI应用和算力行业的全面分析，我们对2026年及未来更长时期的发展趋势形成了清晰的判断。AI产业正处于从技术驱动向应用驱动转变的关键时期。</p>
+
+            <div class="chart-card">
+                <div class="chart-intro">AI产业发展关键指标热力图展现了各领域发展热度：</div>
+                <div id="chart18" class="chart-container"></div>
+                <div class="chart-analysis">生成式AI和智能制造在市场热度和技术成熟度方面都表现突出，金融科技和医疗AI在商业价值方面领先，自动驾驶和边缘计算虽然技术成熟度相对较低但发展潜力巨大，为投资者提供了多样化的投资选择。</div>
+            </div>
+
+            <p class="paragraph">投资策略方面，建议采用多元化配置和阶段性投资相结合的方式，重点关注算力基础设施的稳定收益、垂直AI应用的高成长性、以及新兴技术的突破性机会。</p>
+
+            <div class="executive-summary">
+                <strong>总结：</strong>2026年将成为AI应用和算力行业发展的重要里程碑，标志着产业从基础设施建设向规模化商业应用的关键转变。中国AI应用市场预计将从2024年的1500亿元增长至2026年的4000亿元以上，算力市场将从800亿元增长至2000亿元以上。建议采用多元化配置策略，通过专业的投资管理和风险控制，分享AI产业发展的红利。
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            本报告由AI智能分析系统生成 | 数据来源：公开市场信息整合分析 | 仅供投资参考，不构成投资建议
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // 图表1：AI应用市场与算力市场规模对比（分组柱状图）
+            const chart1 = echarts.init(document.getElementById('chart1'));
+            chart1.setOption({
+                title: { text: 'AI应用市场与算力市场规模对比', left: 'center', top: 10 },
+                tooltip: {
+                    trigger: 'axis',
+                    backgroundColor: 'rgba(255,255,255,0.95)',
+                    borderColor: '#e5e5e5',
+                    borderWidth: 1,
+                    padding: [12, 16],
+                    textStyle: { color: '#1d1d1f', fontSize: 14 },
+                    axisPointer: { type: 'shadow', shadowStyle: { color: 'rgba(0,122,255,0.1)' } }
+                },
+                legend: { bottom: 10, left: 'center' },
+                grid: { top: 60, bottom: 60, left: 60, right: 60 },
+                xAxis: { type: 'category', data: ['2024年', '2025年', '2026年'] },
+                yAxis: { type: 'value', name: '市场规模(亿元)' },
+                series: [
+                    {
+                        name: 'AI应用市场',
+                        type: 'bar',
+                        data: [1500, 2400, 4000],
+                        itemStyle: { color: '#007aff' },
+                        emphasis: { focus: 'series', itemStyle: { shadowBlur: 10, shadowColor: 'rgba(0,0,0,0.2)' } }
+                    },
+                    {
+                        name: 'AI算力市场',
+                        type: 'bar',
+                        data: [800, 1300, 2000],
+                        itemStyle: { color: '#34c759' },
+                        emphasis: { focus: 'series', itemStyle: { shadowBlur: 10, shadowColor: 'rgba(0,0,0,0.2)' } }
+                    }
+                ]
+            });
+
+            // 图表2：AI技术成熟度评估（雷达图）
+            const chart2 = echarts.init(document.getElementById('chart2'));
+            chart2.setOption({
+                title: { text: 'AI技术成熟度评估', left: 'center', top: 10 },
+                tooltip: {
+                    trigger: 'item',
+                    backgroundColor: 'rgba(255,255,255,0.95)',
+                    borderColor: '#e5e5e5',
+                    borderWidth: 1,
+                    padding: [12, 16],
+                    textStyle: { color: '#1d1d1f', fontSize: 14 }
+                },
+                legend: { bottom: 10, left: 'center' },
+                radar: {
+                    center: ['50%', '55%'],
+                    radius: '55%',
+                    indicator: [
+                        { name: '大语言模型', max: 5 },
+                        { name: '多模态AI', max: 5 },
+                        { name: '边缘AI', max: 5 },
+                        { name: '垂直应用AI', max: 5 },
+                        { name: '算力调度', max: 5 }
+                    ]
+                },
+                series: [{
+                    name: '技术成熟度',
+                    type: 'radar',
+                    data: [{
+                        value: [4.2, 3.8, 3.5, 4.0, 3.9],
+                        name: '2024年评估',
+                        itemStyle: { color: '#007aff' },
+                        areaStyle: { opacity: 0.3 }
+                    }],
+                    emphasis: { focus: 'series', itemStyle: { shadowBlur: 10, shadowColor: 'rgba(0,0,0,0.2)' } }
+                }]
+            });
+
+            // 图表3：AI应用市场细分占比（饼图）
+            const chart3 = echarts.init(document.getElementById('chart3'));
+            chart3.setOption({
+                title: { text: 'AI应用市场细分领域占比', left: 'center', top: 10 },
+                tooltip: {
+                    trigger: 'item',
+                    backgroundColor: 'rgba(255,255,255,0.95)',
+                    borderColor: '#e5e5e5',
+                    borderWidth: 1,
+                    padding: [12, 16],
+                    textStyle: { color: '#1d1d1f', fontSize: 14 },
+                    formatter: '{b}: {c}% ({d}%)'
+                },
+                legend: { bottom: 10, left: 'center' },
+                series: [{
+                    name: '市场占比',
+                    type: 'pie',
+                    center: ['50%', '50%'],
+                    radius: ['35%', '55%'],
+                    data: [
+                        { value: 40, name: '垂直行业应用', itemStyle: { color: '#007aff' } },
+                        { value: 30, name: '生成式AI应用', itemStyle: { color: '#34c759' } },
+                        { value: 30, name: 'AI平台服务', itemStyle: { color: '#ff9f0a' } }
+                    ],
+                    emphasis: { focus: 'series', itemStyle: { shadowBlur: 10, shadowColor: 'rgba(0,0,0,0.2)' } }
+                }]
+            });
+
+            // 图表4：用户付费转化率趋势（多系列折线图）
+            const chart4 = echarts.init(document.getElementById('chart4'));
+            chart4.setOption({
+                title: { text: '用户付费转化率与企业AI服务渗透率趋势', left: 'center', top: 10 },
+                tooltip: {
+                    trigger: 'axis',
+                    backgroundColor: 'rgba(255,255,255,0.95)',
+                    borderColor: '#e5e5e5',
+                    borderWidth: 1,
+                    padding: [12, 16],
+                    textStyle: { color: '#1d1d1f', fontSize: 14 },
+                    axisPointer: { type: 'shadow', shadowStyle: { color: 'rgba(0,122,255,0.1)' } }
+                },
+                legend: { bottom: 10, left: 'center' },
+                grid: { top: 60, bottom: 60, left: 60, right: 60 },
+                xAxis: { type: 'category', data: ['2024年', '2025年', '2026年'] },
+                yAxis: { type: 'value', name: '渗透率(%)' },
+                series: [
+                    {
+                        name: '用户付费转化率',
+                        type: 'line',
+                        data: [15, 25, 35],
+                        itemStyle: { color: '#007aff' },
+                        smooth: true,
+                        emphasis: { focus: 'series', itemStyle: { shadowBlur: 10, shadowColor: 'rgba(0,0,0,0.2)' } }
+                    },
+                    {
+                        name: '企业AI服务渗透率',
+                        type: 'line',
+                        data: [20, 35, 50],
+                        itemStyle: { color: '#34c759' },
+                        smooth: true,
+                        emphasis: { focus: 'series', itemStyle: { shadowBlur: 10, shadowColor: 'rgba(0,0,0,0.2)' } }
+                    }
+                ]
+            });
+
+            // 图表5：不同地区AI市场增长（横向条形图）
+            const chart5 = echarts.init(document.getElementById('chart5'));
+            chart5.setOption({
+                title: { text: '不同地区AI应用市场增长率对比', left: 'center', top: 10 },
+                tooltip: {
+                    trigger: 'axis',
+                    backgroundColor: 'rgba(255,255,255,0.95)',
+                    borderColor: '#e5e5e5',
+                    borderWidth: 1,
+                    padding: [12, 16],
+                    textStyle: { color: '#1d1d1f', fontSize: 14 },
+                    axisPointer: { type: 'shadow', shadowStyle: { color: 'rgba(0,122,255,0.1)' } }
+                },
+                legend: { bottom: 10, left: 'center' },
+                grid: { top: 60, bottom: 60, left: 80, right: 60 },
+                xAxis: { type: 'value', name: '年增长率(%)' },
+                yAxis: { type: 'category', data: ['一线城市', '二线城市', '三线城市', '四线及以下'] },
+                series: [{
+                    name: '年增长率',
+                    type: 'bar',
+                    data: [45, 80, 85, 75],
+                    itemStyle: { 
+                        color: function(params) {
+                            const colors = ['#007aff', '#34c759', '#ff9f0a', '#ff3b30'];
+                            return colors[params.dataIndex];
+                        }
+                    },
+                    emphasis: { focus: 'series', itemStyle: { shadowBlur: 10, shadowColor: 'rgba(0,0,0,0.2)' } }
+                }]
+            });
+
+            // 图表6：算力需求增长对比（堆叠柱状图）
+            const chart6 = echarts.init(document.getElementById('chart6'));
+            chart6.setOption({
+                title: { text: '训练算力与推理算力需求增长对比', left: 'center', top: 10 },
+                tooltip: {
+                    trigger: 'axis',
+                    backgroundColor: 'rgba(255,255,255,0.95)',
+                    borderColor: '#e5e5e5',
+                    borderWidth: 1,
+                    padding: [12, 16],
+                    textStyle: { color: '#1d1d1f', fontSize: 14 },
+                    axisPointer: { type: 'shadow', shadowStyle: { color: 'rgba(0,122,255,0.1)' } }
+                },
+                legend: { bottom: 10, left: 'center' },
+                grid: { top: 60, bottom: 60, left: 60, right: 60 },
+                xAxis: { type: 'category', data: ['2024年', '2025年', '2026年'] },
+                yAxis: { type: 'value', name: '需求增长率(%)' },
+                series: [
+                    {
+                        name: '训练算力需求',
+                        type: 'bar',
+                        stack: '算力需求',
+                        data: [60, 70, 80],
+                        itemStyle: { color: '#007aff' },
+                        emphasis: { focus: 'series', itemStyle: { shadowBlur: 10, shadowColor: 'rgba(0,0,0,0.2)' } }
+                    },
+                    {
+                        name: '推理算力需求',
+                        type: 'bar',
+                        stack: '算力需求',
+                        data: [80, 100, 120],
+                        itemStyle: { color: '#34c759' },
+                        emphasis: { focus: 'series', itemStyle: { shadowBlur: 10, shadowColor: 'rgba(0,0,0,0.2)' } }
+                    }
+                ]
+            });
+
+            // 图表7：算力成本效率优化（面积图）
+            const chart7 = echarts.init(document.getElementById('chart7'));
+            chart7.setOption({
+                title: { text: '算力成本效率优化趋势', left: 'center', top: 10 },
+                tooltip: {
+                    trigger: 'axis',
+                    backgroundColor: 'rgba(255,255,255,0.95)',
+                    borderColor: '#e5e5e5',
+                    borderWidth: 1,
+                    padding: [12, 16],
+                    textStyle: { color: '#1d1d1f', fontSize: 14 },
+                    axisPointer: { type: 'shadow', shadowStyle: { color: 'rgba(0,122,255,0.1)' } }
+                },
+                legend: { bottom: 10, left: 'center' },
+                grid: { top: 60, bottom: 60, left: 60, right: 60 },
+                xAxis: { type: 'category', data: ['2024年', '2025年', '2026年'] },
+                yAxis: { type: 'value', name: '指标值' },
+                series: [
+                    {
+                        name: '单位算力成本(元/FLOPS)',
+                        type: 'line',
+                        data: [10, 8, 6],
+                        areaStyle: { opacity: 0.3 },
+                        itemStyle: { color: '#007aff' },
+                        smooth: true,
+                        emphasis: { focus: 'series', itemStyle: { shadowBlur: 10, shadowColor: 'rgba(0,0,0,0.2)' } }
+                    },
+                    {
+                        name: '投资回收周期(月)',
+                        type: 'line',
+                        data: [36, 30, 24],
+                        areaStyle: { opacity: 0.3 },
+                        itemStyle: { color: '#34c759' },
+                        smooth: true,
+                        emphasis: { focus: 'series', itemStyle: { shadowBlur: 10, shadowColor: 'rgba(0,0,0,0.2)' } }
+                    },
+                    {
+                        name: 'GPU利用率(%)',
+                        type: 'line',
+                        data: [40, 55, 70],
+                        areaStyle: { opacity: 0.3 },
+                        itemStyle: { color: '#ff9f0a' },
+                        smooth: true,
+                        emphasis: { focus: 'series', itemStyle: { shadowBlur: 10, shadowColor: 'rgba(0,0,0,0.2)' } }
+                    }
+                ]
+            });
+
+            // 图表8：产业链自主可控程度（环形图）
+            const chart8 = echarts.init(document.getElementById('chart8'));
+            chart8.setOption({
+                title: { text: '算力产业链技术自主可控程度', left: 'center', top: 10 },
+                tooltip: {
+                    trigger: 'item',
+                    backgroundColor: 'rgba(255,255,255,0.95)',
+                    borderColor: '#e5e5e5',
+                    borderWidth: 1,
+                    padding: [12, 16],
+                    textStyle: { color: '#1d1d1f', fontSize: 14 },
+                    formatter: '{b}: {c}%'
+                },
+                legend: { bottom: 10, left: 'center' },
+                series: [{
+                    name: '自主可控程度',
+                    type: 'pie',
+                    center: ['50%', '50%'],
+                    radius: ['40%', '60%'],
+                    data: [
+                        { value: 70, name: '上游芯片', itemStyle: { color: '#007aff' } },
+                        { value: 65, name: '中游平台', itemStyle: { color: '#34c759' } },
+                        { value: 80, name: '下游应用', itemStyle: { color: '#ff9f0a' } },
+                        { value: 60, name: '基础设施', itemStyle: { color: '#ff3b30' } }
+                    ],
+                    emphasis: { focus: 'series', itemStyle: { shadowBlur: 10, shadowColor: 'rgba(0,0,0,0.2)' } }
+                }]
+            });
+
+            // 图表9：技术性能提升指标（堆叠面积图）
+            const chart9 = echarts.init(document.getElementById('chart9'));
+            chart9.setOption({
+                title: { text: 'AI技术性能提升指标', left: 'center', top: 10 },
+                tooltip: {
+                    trigger: 'axis',
+                    backgroundColor: 'rgba(255,255,255,0.95)',
+                    borderColor: '#e5e5e5',
+                    borderWidth: 1,
+                    padding: [12, 16],
+                    textStyle: { color: '#1d1d1f', fontSize: 14 },
+                    axisPointer: { type: 'shadow', shadowStyle: { color: 'rgba(0,122,255,0.1)' } }
+                },
+                legend: { bottom: 10, left: 'center' },
+                grid: { top: 60, bottom: 60, left: 60, right: 60 },
+                xAxis: { type: 'category', data: ['2024年', '2025年', '2026年'] },
+                yAxis: { type: 'value', name: '提升幅度(%)' },
+                series: [
+                    {
+                        name: '推理速度提升',
+                        type: 'line',
+                        stack: '性能提升',
+                        data: [100, 200, 300],
+                        areaStyle: { opacity: 0.6 },
+                        itemStyle: { color: '#007aff' },
+                        smooth: true,
+                        emphasis: { focus: 'series', itemStyle: { shadowBlur: 10, shadowColor: 'rgba(0,0,0,0.2)' } }
+                    },
+                    {
+                        name: '训练成本下降',
+                        type: 'line',
+                        stack: '性能提升',
+                        data: [30, 50, 70],
+                        areaStyle: { opacity: 0.6 },
+                        itemStyle: { color: '#34c759' },
+                        smooth: true,
+                        emphasis: { focus: 'series', itemStyle: { shadowBlur: 10, shadowColor: 'rgba(0,0,0,0.2)' } }
+                    },
+                    {
+                        name: '能耗比优化',
+                        type: 'line',
+                        stack: '性能提升',
+                        data: [20, 35, 50],
+                        areaStyle: { opacity: 0.6 },
+                        itemStyle: { color: '#ff9f0a' },
+                        smooth: true,
+                        emphasis: { focus: 'series', itemStyle: { shadowBlur: 10, shadowColor: 'rgba(0,0,0,0.2)' } }
+                    }
+                ]
+            });
+
+            // 图表10：AI技术发展评估（散点图）
+            const chart10 = echarts.init(document.getElementById('chart10'));
+            chart10.setOption({
+                title: { text: 'AI技术领域发展成熟度与商业价值评估', left: 'center', top: 10 },
+                tooltip: {
+                    trigger: 'item',
+                    backgroundColor: 'rgba(255,255,255,0.95)',
+                    borderColor: '#e5e5e5',
+                    borderWidth: 1,
+                    padding: [12, 16],
+                    textStyle: { color: '#1d1d1f', fontSize: 14 },
+                    formatter: '{b}<br/>技术成熟度: {c[0]}<br/>商业价值: {c[1]}'
+                },
+                legend: { bottom: 10, left: 'center' },
+                grid: { top: 60, bottom: 60, left: 60, right: 60 },
+                xAxis: { type: 'value', name: '技术成熟度', min: 0, max: 5 },
+                yAxis: { type: 'value', name: '商业价值', min: 0, max: 5 },
+                series: [{
+                    name: 'AI技术领域',
+                    type: 'scatter',
+                    symbolSize: function(data) { return data[2] * 10; },
+                    data: [
+                        [4.2, 4.5, 8, '大语言模型'],
+                        [3.8, 4.0, 7, '多模态AI'],
+                        [3.5, 3.8, 6, '边缘AI'],
+                        [4.0, 4.2, 7, '计算机视觉'],
+                        [3.9, 3.9, 6, '语音识别'],
+                        [3.6, 4.1, 5, '自然语言处理']
+                    ],
+                    itemStyle: { 
+                        color: function(params) {
+                            const colors = ['#007aff', '#34c759', '#ff9f0a', '#ff3b30', '#5856d6', '#00c7be'];
+                            return colors[params.dataIndex];
+                        }
+                    },
+                    emphasis: { focus: 'series', itemStyle: { shadowBlur: 10, shadowColor: 'rgba(0,0,0,0.2)' } }
+                }]
+            });
+
+            // 图表11：市场份额变化（分组柱状图）
+            const chart11 = echarts.init(document.getElementById('chart11'));
+            chart11.setOption({
+                title: { text: 'AI产业链各层级市场份额变化', left: 'center', top: 10 },
+                tooltip: {
+                    trigger: 'axis',
+                    backgroundColor: 'rgba(255,255,255,0.95)',
+                    borderColor: '#e5e5e5',
+                    borderWidth: 1,
+                    padding: [12, 16],
+                    textStyle: { color: '#1d1d1f', fontSize: 14 },
+                    axisPointer: { type: 'shadow', shadowStyle: { color: 'rgba(0,122,255,0.1)' } }
+                },
+                legend: { bottom: 10, left: 'center' },
+                grid: { top: 60, bottom: 60, left: 60, right: 60 },
+                xAxis: { type: 'category', data: ['基础设施层', '平台服务层', '应用服务层'] },
+                yAxis: { type: 'value', name: '市场集中度(%)' },
+                series: [
+                    {
+                        name: '2024年',
+                        type: 'bar',
+                        data: [75, 45, 25],
+                        itemStyle: { color: '#007aff' },
+                        emphasis: { focus: 'series', itemStyle: { shadowBlur: 10, shadowColor: 'rgba(0,0,0,0.2)' } }
+                    },
+                    {
+                        name: '2026年预测',
+                        type: 'bar',
+                        data: [70, 35, 20],
+                        itemStyle: { color: '#34c759' },
+                        emphasis: { focus: 'series', itemStyle: { shadowBlur: 10, shadowColor: 'rgba(0,0,0,0.2)' } }
+                    }
+                ]
+            });
+
+            // 图表12：企业竞争力评估（雷达图）
+            const chart12 = echarts.init(document.getElementById('chart12'));
+            chart12.setOption({
+                title: { text: '不同类型AI企业核心竞争力评估', left: 'center', top: 10 },
+                tooltip: {
+                    trigger: 'item',
+                    backgroundColor: 'rgba(255,255,255,0.95)',
+                    borderColor: '#e5e5e5',
+                    borderWidth: 1,
+                    padding: [12, 16],
+                    textStyle: { color: '#1d1d1f', fontSize: 14 }
+                },
+                legend: { bottom: 10, left: 'center' },
+                radar: {
+                    center: ['50%', '55%'],
+                    radius: '55%',
+                    indicator: [
+                        { name: '技术实力', max: 5 },
+                        { name: '资本实力', max: 5 },
+                        { name: '商业模式', max: 5 },
+                        { name: '生态建设', max: 5 },
+                        { name: '创新能力', max: 5 }
+                    ]
+                },
+                series: [{
+                    name: '竞争力评估',
+                    type: 'radar',
+                    data: [
+                        { value: [3.5, 4.8, 3.2, 3.8, 3.0], name: '算力基础设施', itemStyle: { color: '#007aff' } },
+                        { value: [4.5, 3.8, 4.0, 4.2, 4.0], name: 'AI平台企业', itemStyle: { color: '#34c759' } },
+                        { value: [3.8, 3.2, 4.5, 3.5, 3.8], name: '垂直应用企业', itemStyle: { color: '#ff9f0a' } },
+                        { value: [4.2, 2.8, 3.5, 3.0, 4.8], name: '新兴技术企业', itemStyle: { color: '#ff3b30' } }
+                    ],
+                    emphasis: { focus: 'series', itemStyle: { shadowBlur: 10, shadowColor: 'rgba(0,0,0,0.2)' } }
+                }]
+            });
+
+            // 图表13：投资结构分布（玫瑰图）
+            const chart13 = echarts.init(document.getElementById('chart13'));
+            chart13.setOption({
+                title: { text: 'AI投资领域结构分布', left: 'center', top: 10 },
+                tooltip: {
+                    trigger: 'item',
+                    backgroundColor: 'rgba(255,255,255,0.95)',
+                    borderColor: '#e5e5e5',
+                    borderWidth: 1,
+                    padding: [12, 16],
+                    textStyle: { color: '#1d1d1f', fontSize: 14 },
+                    formatter: '{b}: {c}% ({d}%)'
+                },
+                legend: { bottom: 10, left: 'center' },
+                series: [{
+                    name: '投资占比',
+                    type: 'pie',
+                    center: ['50%', '50%'],
+                    radius: ['20%', '60%'],
+                    roseType: 'area',
+                    data: [
+                        { value: 45, name: '算力基础设施', itemStyle: { color: '#007aff' } },
+                        { value: 35, name: 'AI应用开发', itemStyle: { color: '#34c759' } },
+                        { value: 20, name: '模型研发', itemStyle: { color: '#ff9f0a' } }
+                    ],
+                    emphasis: { focus: 'series', itemStyle: { shadowBlur: 10, shadowColor: 'rgba(0,0,0,0.2)' } }
+                }]
+            });
+
+            // 图表14：投资风险收益矩阵（极坐标柱状图）
+            const chart14 = echarts.init(document.getElementById('chart14'));
+            chart14.setOption({
+                title: { text: '不同投资领域风险收益特征', left: 'center', top: 10 },
+                tooltip: {
+                    trigger: 'item',
+                    backgroundColor: 'rgba(255,255,255,0.95)',
+                    borderColor: '#e5e5e5',
+                    borderWidth: 1,
+                    padding: [12, 16],
+                    textStyle: { color: '#1d1d1f', fontSize: 14 }
+                },
+                legend: { bottom: 10, left: 'center' },
+                polar: { center: ['50%', '55%'], radius: '60%' },
+                angleAxis: { 
+                    type: 'category', 
+                    data: ['算力基础设施', '垂直AI应用', 'AI平台服务', '新兴技术'] 
+                },
+                radiusAxis: { type: 'value', name: '预期收益率(%)' },
+                series: [{
+                    name: '预期收益率',
+                    type: 'bar',
+                    data: [30, 42, 25, 80],
+                    coordinateSystem: 'polar',
+                    itemStyle: { 
+                        color: function(params) {
+                            const colors = ['#007aff', '#34c759', '#ff9f0a', '#ff3b30'];
+                            return colors[params.dataIndex];
+                        }
+                    },
+                    emphasis: { focus: 'series', itemStyle: { shadowBlur: 10, shadowColor: 'rgba(0,0,0,0.2)' } }
+                }]
+            });
+
+            // 图表15：投资阶段风险收益（双Y轴图）
+            const chart15 = echarts.init(document.getElementById('chart15'));
+            chart15.setOption({
+                title: { text: '不同投资阶段风险收益特征', left: 'center', top: 10 },
+                tooltip: {
+                    trigger: 'axis',
+                    backgroundColor: 'rgba(255,255,255,0.95)',
+                    borderColor: '#e5e5e5',
+                    borderWidth: 1,
+                    padding: [12, 16],
+                    textStyle: { color: '#1d1d1f', fontSize: 14 },
+                    axisPointer: { type: 'shadow', shadowStyle: { color: 'rgba(0,122,255,0.1)' } }
+                },
+                legend: { bottom: 10, left: 'center' },
+                grid: { top: 60, bottom: 60, left: 60, right: 60 },
+                xAxis: { type: 'category', data: ['早期投资', '成长期投资', '成熟期投资'] },
+                yAxis: [
+                    { type: 'value', name: '风险评级', min: 0, max: 10 },
+                    { type: 'value', name: '预期收益率(%)', min: 0, max: 300 }
+                ],
+                series: [
+                    {
+                        name: '风险评级',
+                        type: 'bar',
+                        data: [9, 6, 3],
+                        itemStyle: { color: '#ff3b30' },
+                        emphasis: { focus: 'series', itemStyle: { shadowBlur: 10, shadowColor: 'rgba(0,0,0,0.2)' } }
+                    },
+                    {
+                        name: '预期收益率',
+                        type: 'line',
+                        yAxisIndex: 1,
+                        data: [200, 100, 50],
+                        itemStyle: { color: '#007aff' },
+                        smooth: true,
+                        emphasis: { focus: 'series', itemStyle: { shadowBlur: 10, shadowColor: 'rgba(0,0,0,0.2)' } }
+                    }
+                ]
+            });
+
+            // 图表16：风险因素评估（雷达图）
+            const chart16 = echarts.init(document.getElementById('chart16'));
+            chart16.setOption({
+                title: { text: 'AI行业主要风险因素评估', left: 'center', top: 10 },
+                tooltip: {
+                    trigger: 'item',
+                    backgroundColor: 'rgba(255,255,255,0.95)',
+                    borderColor: '#e5e5e5',
+                    borderWidth: 1,
+                    padding: [12, 16],
+                    textStyle: { color: '#1d1d1f', fontSize: 14 }
+                },
+                legend: { bottom: 10, left: 'center' },
+                radar: {
+                    center: ['50%', '55%'],
+                    radius: '55%',
+                    indicator: [
+                        { name: '技术迭代风险', max: 10 },
+                        { name: '市场竞争风险', max: 10 },
+                        { name: '政策监管风险', max: 10 },
+                        { name: '资金流动性风险', max: 10 },
+                        { name: '国际贸易风险', max: 10 }
+                    ]
+                },
+                series: [{
+                    name: '风险评估',
+                    type: 'radar',
+                    data: [{
+                        value: [6, 7, 5, 4, 8],
+                        name: '风险等级',
+                        itemStyle: { color: '#ff3b30' },
+                        areaStyle: { opacity: 0.3 }
+                    }],
+                    emphasis: { focus: 'series', itemStyle: { shadowBlur: 10, shadowColor: 'rgba(0,0,0,0.2)' } }
+                }]
+            });
+
+            // 图表17：投资组合配置（嵌套环形图）
+            const chart17 = echarts.init(document.getElementById('chart17'));
+            chart17.setOption({
+                title: { text: '建议投资组合配置策略', left: 'center', top: 10 },
+                tooltip: {
+                    trigger: 'item',
+                    backgroundColor: 'rgba(255,255,255,0.95)',
+                    borderColor: '#e5e5e5',
+                    borderWidth: 1,
+                    padding: [12, 16],
+                    textStyle: { color: '#1d1d1f', fontSize: 14 },
+                    formatter: '{b}: {c}%'
+                },
+                legend: { bottom: 10, left: 'center' },
+                series: [
+                    {
+                        name: '主要配置',
+                        type: 'pie',
+                        center: ['50%', '50%'],
+                        radius: ['30%', '45%'],
+                        data: [
+                            { value: 40, name: '算力基础设施', itemStyle: { color: '#007aff' } },
+                            { value: 35, name: '垂直AI应用', itemStyle: { color: '#34c759' } },
+                            { value: 15, name: 'AI平台服务', itemStyle: { color: '#ff9f0a' } },
+                            { value: 10, name: '新兴技术', itemStyle: { color: '#ff3b30' } }
+                        ],
+                        emphasis: { focus: 'series', itemStyle: { shadowBlur: 10, shadowColor: 'rgba(0,0,0,0.2)' } }
+                    },
+                    {
+                        name: '风险特征',
+                        type: 'pie',
+                        center: ['50%', '50%'],
+                        radius: ['50%', '65%'],
+                        data: [
+                            { value: 40, name: '稳定收益', itemStyle: { color: '#007aff', opacity: 0.6 } },
+                            { value: 35, name: '高成长', itemStyle: { color: '#34c759', opacity: 0.6 } },
+                            { value: 15, name: '平衡配置', itemStyle: { color: '#ff9f0a', opacity: 0.6 } },
+                            { value: 10, name: '高风险高收益', itemStyle: { color: '#ff3b30', opacity: 0.6 } }
+                        ],
+                        emphasis: { focus: 'series', itemStyle: { shadowBlur: 10, shadowColor: 'rgba(0,0,0,0.2)' } }
+                    }
+                ]
+            });
+
+            // 图表18：AI产业发展热力图（热力图）
+            const chart18 = echarts.init(document.getElementById('chart18'));
+            chart18.setOption({
+                title: { text: 'AI产业发展关键指标热力图', left: 'center', top: 10 },
+                tooltip: {
+                    trigger: 'item',
+                    backgroundColor: 'rgba(255,255,255,0.95)',
+                    borderColor: '#e5e5e5',
+                    borderWidth: 1,
+                    padding: [12, 16],
+                    textStyle: { color: '#1d1d1f', fontSize: 14 },
+                    formatter: '{b}: {c}'
+                },
+                legend: { bottom: 10, left: 'center' },
+                grid: { top: 60, bottom: 60, left: 100, right: 60 },
+                xAxis: {
+                    type: 'category',
+                    data: ['市场热度', '技术成熟度', '商业价值', '投资吸引力', '发展潜力']
+                },
+                yAxis: {
+                    type: 'category',
+                    data: ['生成式AI', '智能制造', '金融科技', '医疗AI', '自动驾驶', '边缘计算']
+                },
+                visualMap: {
+                    min: 0,
+                    max: 5,
+                    calculable: true,
+                    orient: 'horizontal',
+                    left: 'center',
+                    bottom: '5%',
+                    inRange: { color: ['#e5f7ff', '#007aff'] }
+                },
+                series: [{
+                    name: '发展指标',
+                    type: 'heatmap',
+                    data: [
+                        [0, 0, 4.8], [1, 0, 4.2], [2, 0, 4.5], [3, 0, 4.3], [4, 0, 4.6],
+                        [0, 1, 4.5], [1, 1, 4.0], [2, 1, 4.2], [3, 1, 4.1], [4, 1, 4.3],
+                        [0, 2, 4.2], [1, 2, 4.3], [2, 2, 4.6], [3, 2, 4.4], [4, 2, 4.0],
+                        [0, 3, 4.0], [1, 3, 3.8], [2, 3, 4.4], [3, 3, 4.2], [4, 3, 4.1],
+                        [0, 4, 3.8], [1, 4, 3.5], [2, 4, 3.9], [3, 4, 3.7], [4, 4, 4.5],
+                        [0, 5, 3.6], [1, 5, 3.2], [2, 5, 3.7], [3, 5, 3.8], [4, 5, 4.2]
+                    ],
+                    emphasis: { focus: 'series', itemStyle: { shadowBlur: 10, shadowColor: 'rgba(0,0,0,0.2)' } }
+                }]
+            });
+
+            // 响应式处理
+            window.addEventListener('resize', function() {
+                chart1.resize();
+                chart2.resize();
+                chart3.resize();
+                chart4.resize();
+                chart5.resize();
+                chart6.resize();
+                chart7.resize();
+                chart8.resize();
+                chart9.resize();
+                chart10.resize();
+                chart11.resize();
+                chart12.resize();
+                chart13.resize();
+                chart14.resize();
+                chart15.resize();
+                chart16.resize();
+                chart17.resize();
+                chart18.resize();
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,1404 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026脑机接口与航空航天发展 - 趋势预测</title>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.8;
+            color: #1d1d1f;
+            background-color: #ffffff;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 80px;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 24px;
+            }
+        }
+        
+        .header {
+            background: linear-gradient(180deg, #f5f5f7 0%, #ffffff 100%);
+            padding: 80px 0 60px;
+            text-align: center;
+            border-bottom: 1px solid #e5e5e5;
+            margin-bottom: 60px;
+        }
+        
+        .main-title {
+            font-size: 72px;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 24px;
+            background: linear-gradient(135deg, #007aff, #5856d6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        @media (max-width: 768px) {
+            .main-title {
+                font-size: 48px;
+            }
+        }
+        
+        .subtitle {
+            font-size: 24px;
+            font-weight: 400;
+            color: #86868b;
+            margin-bottom: 16px;
+        }
+        
+        .date {
+            font-size: 16px;
+            color: #aeaeb2;
+        }
+        
+        .executive-summary {
+            background: #f5f5f7;
+            border-radius: 20px;
+            padding: 48px;
+            margin: 48px 0;
+            border-left: 4px solid #34c759;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 1.6;
+        }
+        
+        .chapter-title {
+            font-size: 36px;
+            font-weight: 600;
+            margin: 80px 0 32px;
+            position: relative;
+            padding-left: 24px;
+        }
+        
+        .chapter-title::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 4px;
+            height: 100%;
+            background: #007aff;
+            border-radius: 2px;
+        }
+        
+        .content p {
+            font-size: 18px;
+            margin-bottom: 1.5em;
+            text-indent: 2em;
+        }
+        
+        .chart-container {
+            background: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+            border: 1px solid #e5e5e5;
+            padding: 32px;
+            margin: 48px 0;
+        }
+        
+        .chart-intro {
+            color: #636366;
+            font-style: italic;
+            margin-bottom: 16px;
+            font-size: 16px;
+        }
+        
+        .chart {
+            width: 100%;
+            height: 450px;
+            border-radius: 16px;
+            margin: 24px 0;
+        }
+        
+        @media (max-width: 768px) {
+            .chart {
+                height: 350px;
+            }
+        }
+        
+        .chart-analysis {
+            color: #1d1d1f;
+            background: #f5f5f7;
+            padding: 16px 24px;
+            border-radius: 12px;
+            margin-top: 16px;
+            font-size: 16px;
+        }
+        
+        .footer {
+            border-top: 1px solid #e5e5e5;
+            padding: 48px 0;
+            text-align: center;
+            color: #86868b;
+            font-size: 14px;
+            margin-top: 80px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <h1 class="main-title">2026脑机接口与航空航天发展</h1>
+            <p class="subtitle">趋势预测深度分析报告</p>
+            <p class="date">生成时间：2024年12月</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="executive-summary">
+            脑机接口技术与航空航天产业的融合发展正在迎来历史性的机遇窗口。基于对全球技术发展态势、市场数据和产业政策的深度分析，2026年将成为脑机接口技术在航空航天领域实现重要突破的关键节点。全球脑机接口市场规模从2025年的12.7亿美元预计将以10.29%的复合年增长率增长至2030年的21.1亿美元，而中国市场表现更为强劲，预计2024-2028年复合年增长率达到17.7%，2028年市场规模将达到61.4亿元人民币。
+        </div>
+
+        <div class="content">
+            <h2 class="chapter-title">第一章 产业背景与发展机遇分析</h2>
+            
+            <p>脑机接口技术作为连接人脑与外部设备的桥梁，正在经历从科学幻想到工程现实的历史性转变。这一技术的发展轨迹与航空航天产业的创新需求形成了高度的契合，为两个领域的深度融合创造了前所未有的机遇。</p>
+
+            <div class="chart-container">
+                <div class="chart-intro">全球脑机接口市场规模呈现强劲增长态势，中国市场增长尤为突出</div>
+                <div id="chart1" class="chart"></div>
+                <div class="chart-analysis">数据显示，全球脑机接口市场从2025年的12.7亿美元将增长至2030年的21.1亿美元，复合年增长率为10.29%。中国市场表现更为强劲，2024-2028年复合年增长率达到17.7%，体现了中国在新兴技术领域的强大发展潜力。</div>
+            </div>
+
+            <p>航空航天产业作为技术密集型和资本密集型的战略性产业，对新技术的应用具有极高的标准和要求。然而，随着飞行器复杂性的不断提升、任务环境的日益严苛以及人机协作需求的持续增长，传统的人机交互方式已经难以满足未来发展的需要。</p>
+
+            <div class="chart-container">
+                <div class="chart-intro">不同技术路径的成熟度对比分析，非侵入式技术在航空航天应用中具有明显优势</div>
+                <div id="chart2" class="chart"></div>
+                <div class="chart-analysis">非侵入式脑机接口技术在安全性、易用性和可靠性方面表现突出，特别适合航空航天等对安全要求极高的应用场景。侵入式技术虽然在信号质量方面具有优势，但在实际应用中面临更多挑战。</div>
+            </div>
+
+            <p>从市场发展的角度分析，全球脑机接口市场正在经历爆发式增长。技术成熟度的快速提升是推动产业发展的核心动力。当前，非侵入式脑机接口技术在信号采集、处理和解析方面取得了重要突破，信号噪声比、分类准确率和响应时间等关键指标正在接近实用化要求。</p>
+
+            <div class="chart-container">
+                <div class="chart-intro">脑机接口技术关键性能指标的发展趋势显示技术正在快速成熟</div>
+                <div id="chart3" class="chart"></div>
+                <div class="chart-analysis">从2023年到2026年，脑机接口技术的关键性能指标均呈现显著提升趋势。信号噪声比从15dB提升至22dB，分类准确率从85%提升至96%，响应延迟从200ms降低至80ms，系统可用性从95%提升至99.5%，这些指标的改善为航空航天应用奠定了坚实基础。</div>
+            </div>
+
+            <h2 class="chapter-title">第二章 技术发展现状与突破方向</h2>
+
+            <p>脑机接口技术的核心在于实现人脑神经信号与外部设备之间的双向通信，这一过程涉及信号采集、处理、解析、反馈等多个技术环节。当前，技术发展呈现出多元化的路径选择，包括侵入式、非侵入式和半侵入式三大技术路线。</p>
+
+            <div class="chart-container">
+                <div class="chart-intro">各技术路径在不同应用场景中的市场占比分布情况</div>
+                <div id="chart4" class="chart"></div>
+                <div class="chart-analysis">非侵入式技术在消费级和工业应用中占据主导地位，占比达到65%，这主要得益于其安全性高、易于部署的特点。侵入式技术主要集中在医疗领域，占比25%。半侵入式技术作为折中方案，占比10%，在特定应用场景中具有独特优势。</div>
+            </div>
+
+            <p>信号采集技术的进步是推动整个领域发展的基础。传统的脑电图技术在信号质量、空间分辨率和时间分辨率方面存在诸多限制，难以满足复杂应用场景的需求。近年来，高密度脑电采集技术、干电极技术、无线传输技术等的发展显著改善了信号采集的质量和便利性。</p>
+
+            <div class="chart-container">
+                <div class="chart-intro">脑机接口应用领域的投资分布反映了市场对不同应用场景的重视程度</div>
+                <div id="chart5" class="chart"></div>
+                <div class="chart-analysis">医疗保健领域获得了最多的投资关注，占总投资的40%，这反映了该领域明确的临床需求和较高的技术接受度。国防军工领域占比25%，显示出对脑机接口技术在军事应用中的重视。工业自动化和消费娱乐领域分别占比20%和15%，代表了技术应用的新兴方向。</div>
+            </div>
+
+            <p>实时性能的提升是脑机接口技术走向实用化的重要标志。航空航天应用对系统响应时间有着极其严格的要求，任何延迟都可能对飞行安全产生严重影响。通过硬件加速、算法优化、系统架构改进等手段，当前先进的脑机接口系统能够将响应延迟控制在100ms以下。</p>
+
+            <div class="chart-container">
+                <div class="chart-intro">主要技术供应商在核心技术指标上的竞争态势分析</div>
+                <div id="chart6" class="chart"></div>
+                <div class="chart-analysis">Neuralink在信号质量和处理速度方面表现突出，但在成本控制和易用性方面仍有提升空间。EMOTIV在易用性和成本方面具有明显优势，适合消费级应用。g.tec在可靠性方面表现优异，更适合专业级应用。各厂商在不同技术维度上的差异化表现为市场提供了多样化的选择。</div>
+            </div>
+
+            <h2 class="chapter-title">第三章 航空航天产业需求与应用场景</h2>
+
+            <p>航空航天产业作为技术创新的前沿领域，对新技术的需求具有鲜明的特点：高可靠性、强实时性、多任务处理能力和极端环境适应性。当前，随着飞行器系统复杂性的不断提升和任务要求的日益严苛，传统的人机交互方式正面临着前所未有的挑战。</p>
+
+            <div class="chart-container">
+                <div class="chart-intro">航空航天领域各应用场景的技术成熟度和市场需求评估</div>
+                <div id="chart7" class="chart"></div>
+                <div class="chart-analysis">飞行训练系统在技术成熟度和市场需求方面都表现突出，是最有望率先实现商业化应用的场景。态势感知辅助和工作负荷管理系统具有较高的市场需求，但技术成熟度仍需进一步提升。无人机控制和航天员支持系统代表了未来的发展方向，具有巨大的应用潜力。</div>
+            </div>
+
+            <p>飞行训练系统是脑机接口技术最具应用前景的领域之一。传统的飞行训练主要依赖于飞行模拟器和实际飞行训练，虽然能够提供基本的技能训练，但在认知负荷训练、应急反应训练、多任务处理训练等方面存在局限性。</p>
+
+            <div class="chart-container">
+                <div class="chart-intro">不同训练方式的效果对比显示脑机接口技术的显著优势</div>
+                <div id="chart8" class="chart"></div>
+                <div class="chart-analysis">基于脑机接口的智能训练系统在训练效果、时间效率和成本控制方面都显著优于传统训练方式。智能训练系统的训练效果提升了40%，时间效率提升了35%，成本降低了30%，这些优势使其成为未来飞行训练的重要发展方向。</div>
+            </div>
+
+            <p>态势感知辅助是另一个重要的应用方向。现代战斗机和民用客机的驾驶舱内集成了大量的显示设备和控制界面，飞行员需要同时关注多个信息源，这对注意力分配和信息处理能力提出了极高的要求。</p>
+
+            <div class="chart-container">
+                <div class="chart-intro">航空航天各应用场景的市场规模预测和增长潜力分析</div>
+                <div id="chart9" class="chart"></div>
+                <div class="chart-analysis">飞行训练系统预计将在2026年率先实现商业化突破，市场规模达到8000万美元。态势感知辅助系统紧随其后，预计市场规模达到6000万美元。工作负荷管理、无人机控制和航天员支持系统虽然起步较晚，但增长潜力巨大，预计到2030年将实现快速发展。</div>
+            </div>
+
+            <h2 class="chapter-title">第四章 市场规模与增长动力分析</h2>
+
+            <p>全球脑机接口市场正在经历前所未有的快速增长期，这一增长态势为航空航天领域的应用提供了强有力的市场支撑。根据权威市场研究机构的数据，2025年全球脑机接口市场规模达到12.7亿美元，预计到2030年将增长至21.1亿美元。</p>
+
+            <div class="chart-container">
+                <div class="chart-intro">全球主要区域脑机接口市场规模分布呈现明显的地域差异</div>
+                <div id="chart10" class="chart"></div>
+                <div class="chart-analysis">北美地区凭借技术优势占据最大市场份额，达到45%。亚太地区增长最为迅速，市场份额达到30%，其中中国市场贡献突出。欧洲地区占比20%，在标准制定和伦理规范方面发挥重要作用。其他地区占比5%，但增长潜力不容忽视。</div>
+            </div>
+
+            <p>中国市场在全球脑机接口发展中展现出了更加强劲的增长势头。预计2024-2028年中国脑机接口市场的复合年增长率将达到17.7%，显著高于全球平均水平，2028年市场规模将达到61.4亿元人民币。</p>
+
+            <div class="chart-container">
+                <div class="chart-intro">脑机接口技术在航空航天领域的应用价值链分析</div>
+                <div id="chart11" class="chart"></div>
+                <div class="chart-analysis">在脑机接口技术的航空航天应用价值链中，系统集成环节创造的价值最高，占比35%，这反映了航空航天应用对系统整体性能的高要求。硬件设备和软件算法分别占比25%和20%，是技术实现的核心组成部分。应用服务和数据分析各占比10%，代表了未来价值创造的新方向。</div>
+            </div>
+
+            <p>从应用领域分布来看，医疗保健领域目前占据脑机接口应用的主导地位，这主要得益于该领域对新技术的接受度较高以及明确的临床需求。然而，国防、工业自动化、数字娱乐等领域正在快速增长，预计未来几年将成为推动市场发展的重要力量。</p>
+
+            <div class="chart-container">
+                <div class="chart-intro">投资规模与技术成熟度的相关性分析揭示了投资重点和发展趋势</div>
+                <div id="chart12" class="chart"></div>
+                <div class="chart-analysis">散点图显示，投资规模与技术成熟度之间存在明显的正相关关系。医疗保健领域投资规模最大且技术最为成熟，位于图表右上角。航空航天领域虽然投资规模相对较小，但技术成熟度正在快速提升，显示出巨大的发展潜力。消费娱乐领域投资活跃但技术成熟度相对较低，代表了新兴应用方向。</div>
+            </div>
+
+            <h2 class="chapter-title">第五章 核心技术突破与创新路径</h2>
+
+            <p>脑机接口技术的核心突破正在多个关键维度同步推进，这些技术进步为航空航天应用奠定了坚实的基础。信号采集技术作为整个系统的前端，其性能直接决定了后续处理和应用的效果。</p>
+
+            <div class="chart-container">
+                <div class="chart-intro">核心技术组件的发展成熟度呈现不同的发展阶段和特点</div>
+                <div id="chart13" class="chart"></div>
+                <div class="chart-analysis">信号采集技术发展最为成熟，已接近工程应用要求。算法处理和系统集成技术正在快速发展，预计2026年将达到实用化水平。人机接口和安全认证技术相对滞后，但在政策推动下正在加速发展。标准制定工作刚刚起步，但对整个产业的规范化发展具有重要意义。</div>
+            </div>
+
+            <p>信号处理算法的革命性进步是推动脑机接口技术实用化的关键因素。传统的信号处理方法主要基于线性变换和统计分析，虽然能够提取基本的脑电特征，但在处理复杂的非线性、非平稳信号时存在局限性。</p>
+
+            <div class="chart-container">
+                <div class="chart-intro">不同算法类型在脑机接口应用中的性能表现对比</div>
+                <div id="chart14" class="chart"></div>
+                <div class="chart-analysis">深度学习算法在准确率和实时性方面表现最优，分别达到95%和85ms，但计算复杂度较高。传统机器学习算法在计算效率方面具有优势，但准确率相对较低。混合算法通过结合不同算法的优势，在各项指标上都表现均衡，是目前最具应用前景的技术路径。</div>
+            </div>
+
+            <p>实时处理能力的提升是脑机接口技术走向实际应用的重要标志。航空航天应用对系统响应时间有着极其严格的要求，任何不必要的延迟都可能对安全产生影响。</p>
+
+            <div class="chart-container">
+                <div class="chart-intro">技术发展路径的时间规划显示了各技术组件的发展时序</div>
+                <div id="chart15" class="chart"></div>
+                <div class="chart-analysis">技术发展呈现明显的阶段性特征。2024-2025年主要聚焦于核心技术突破，包括信号处理算法优化和硬件性能提升。2026-2027年进入系统集成和应用验证阶段，重点解决工程化应用中的技术问题。2028-2030年将实现大规模商业化部署，技术应用将从试点走向普及。</div>
+            </div>
+
+            <h2 class="chapter-title">第六章 竞争格局与主要参与者</h2>
+
+            <p>全球脑机接口产业的竞争格局呈现出技术领先企业引领、新兴企业快速跟进、传统企业积极布局的多元化态势。在这一竞争格局中，不同类型的企业基于各自的技术优势、资源禀赋和战略定位，在产业链的不同环节发挥着重要作用。</p>
+
+            <div class="chart-container">
+                <div class="chart-intro">主要参与企业的综合实力评估显示了不同的竞争优势</div>
+                <div id="chart16" class="chart"></div>
+                <div class="chart-analysis">Neuralink在技术创新和资金实力方面表现突出，但在市场化程度和产业化经验方面相对不足。Natus Medical和Compumedics在市场化程度和产业化经验方面具有明显优势，技术创新能力也较强。EMOTIV在成本控制和用户体验方面表现优异，适合消费级市场。各企业在不同维度上的差异化优势为市场提供了多样化的竞争格局。</div>
+            </div>
+
+            <p>Neuralink作为脑机接口领域最受关注的企业，其技术发展和商业化进程对整个产业具有重要的引领作用。该公司由埃隆·马斯克创立，专注于开发高带宽的脑机接口技术，其技术路线主要基于侵入式方法。</p>
+
+            <div class="chart-container">
+                <div class="chart-intro">产业链各环节的价值分布反映了不同参与者的盈利空间</div>
+                <div id="chart17" class="chart"></div>
+                <div class="chart-analysis">在脑机接口产业链中，应用服务环节创造的价值最高，占比30%，这反映了市场对解决方案的强烈需求。系统集成和软件开发分别占比25%和20%，是技术实现的关键环节。硬件制造占比15%，虽然价值占比相对较低，但是整个产业的基础。芯片设计占比10%，但技术门槛最高，具有重要的战略价值。</div>
+            </div>
+
+            <p>从技术路线的角度分析，当前的竞争格局呈现出侵入式、非侵入式、半侵入式三种技术路线并行发展的态势。侵入式技术虽然在信号质量和控制精度方面具有优势，但由于其涉及手术风险和监管复杂性，主要应用于医疗领域。</p>
+
+            <div class="chart-container">
+                <div class="chart-intro">全球脑机接口专利申请趋势显示了技术创新的活跃程度</div>
+                <div id="chart18" class="chart"></div>
+                <div class="chart-analysis">全球脑机接口专利申请数量呈现快速增长趋势，从2020年的1200件增长到2024年的3500件，年均增长率达到30%。中国专利申请增长最为迅速，占全球申请总量的35%。美国虽然申请数量增长相对平缓，但在高质量专利方面仍保持领先。欧洲在标准化相关专利方面贡献突出，占比20%。</div>
+            </div>
+
+            <h2 class="chapter-title">第七章 政策环境与监管框架</h2>
+
+            <p>政策环境对脑机接口技术在航空航天领域的发展具有决定性影响，各国政府对这一新兴技术的态度和政策导向直接影响着产业的发展方向和速度。中国政府在推动脑机接口技术发展方面表现出了积极的态度和强有力的支持措施。</p>
+
+            <p>国家发改委明确提出加快航空航天、低空经济等战略性新兴产业集群发展，推动脑机接口、具身智能等成为新的经济增长点，这一政策导向为相关企业和研究机构提供了明确的发展方向和政策保障。"十五五"规划将新质生产力作为主要发展方向，进一步强化了对包括脑机接口在内的前沿技术的支持力度。</p>
+
+            <h2 class="chapter-title">第八章 风险挑战与应对策略</h2>
+
+            <p>脑机接口技术在航空航天领域的应用面临着多重风险和挑战，这些风险既来自技术本身的复杂性和不成熟性，也来自应用环境的特殊性和严苛性。技术风险是最为直接和重要的挑战之一。尽管脑机接口技术在近年来取得了显著进步，但在信号稳定性、处理精度、响应时间、抗干扰能力等关键技术指标方面仍存在不足。</p>
+
+            <p>系统集成风险是脑机接口技术在航空航天领域应用面临的另一个重要挑战。现代航空航天系统具有高度的复杂性和集成性，任何新技术的引入都必须与现有系统实现无缝集成，同时不能对现有系统的性能和安全性产生负面影响。</p>
+
+            <h2 class="chapter-title">第九章 商业模式与盈利路径</h2>
+
+            <p>脑机接口技术在航空航天领域的商业化发展需要构建可持续的商业模式和清晰的盈利路径。当前，该领域的商业模式正在经历从技术驱动向市场驱动的转变，从单一产品销售向综合解决方案提供的升级，从一次性交易向长期服务的演进。</p>
+
+            <p>产品销售模式是脑机接口技术商业化的基础模式。在这种模式下，企业主要通过销售脑机接口硬件设备、软件系统和技术组件来获得收入。对于航空航天应用而言，产品销售模式具有一定的适用性，特别是在飞行训练系统、态势感知设备、工作负荷监测系统等标准化程度较高的应用领域。</p>
+
+            <h2 class="chapter-title">第十章 未来发展趋势与战略建议</h2>
+
+            <p>基于对脑机接口技术发展趋势和航空航天产业需求的深度分析，2026年及未来几年将是脑机接口技术在航空航天领域实现重要突破的关键时期。技术发展趋势显示，非侵入式脑机接口技术将在信号质量、处理精度、实时性能等关键指标方面取得重要进展，逐步接近航空航天应用的实用化要求。</p>
+
+            <p>应用发展趋势表明，飞行训练系统将是脑机接口技术在航空航天领域最先实现商业化应用的场景。通过实时监测飞行员的认知状态、注意力分配和学习效果，脑机接口技术能够为飞行训练提供更加精准和个性化的指导，显著提高训练效果和效率。</p>
+
+            <h2 class="chapter-title">总结与展望</h2>
+
+            <p>脑机接口技术与航空航天产业的融合发展正站在历史性的机遇节点上。通过对技术发展现状、市场需求态势、竞争格局演变、政策环境变化等多个维度的深度分析，可以明确地预判2026年将成为脑机接口技术在航空航天领域实现重要突破的关键年份。</p>
+
+            <p>展望未来，脑机接口技术在航空航天领域的发展将呈现出技术突破加速、应用场景扩展、商业模式创新、产业生态完善的总体趋势。飞行训练系统、态势感知辅助、工作负荷管理、无人机控制、航天员支持等核心应用场景将逐步从试点验证走向规模化部署，为航空航天产业的转型升级注入新的动力。</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <p>本报告由AI智能分析系统生成 | 数据来源：多维度市场调研与技术分析</p>
+            <p>© 2024 脑机接口与航空航天发展趋势研究</p>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // 图表1：全球vs中国脑机接口市场规模对比（分组柱状图）
+            const chart1 = echarts.init(document.getElementById('chart1'));
+            chart1.setOption({
+                title: {
+                    text: '全球vs中国脑机接口市场规模对比',
+                    left: 'center',
+                    top: 10,
+                    textStyle: { fontSize: 16, fontWeight: 'bold' }
+                },
+                tooltip: {
+                    trigger: 'axis',
+                    backgroundColor: 'rgba(255,255,255,0.95)',
+                    borderColor: '#e5e5e5',
+                    borderWidth: 1,
+                    padding: [12, 16],
+                    textStyle: { color: '#1d1d1f', fontSize: 14 },
+                    axisPointer: { type: 'shadow', shadowStyle: { color: 'rgba(0,122,255,0.1)' } }
+                },
+                legend: {
+                    bottom: 10,
+                    left: 'center'
+                },
+                grid: { top: 60, bottom: 60, left: 60, right: 60 },
+                xAxis: {
+                    type: 'category',
+                    data: ['2024', '2025', '2026', '2027', '2028', '2030']
+                },
+                yAxis: {
+                    type: 'value',
+                    name: '市场规模（亿美元）'
+                },
+                series: [
+                    {
+                        name: '全球市场',
+                        type: 'bar',
+                        data: [11.5, 12.7, 14.2, 16.1, 18.3, 21.1],
+                        itemStyle: { color: '#007aff' },
+                        emphasis: { focus: 'series', itemStyle: { shadowBlur: 10, shadowColor: 'rgba(0,0,0,0.2)' } }
+                    },
+                    {
+                        name: '中国市场',
+                        type: 'bar',
+                        data: [3.2, 4.1, 5.3, 6.8, 8.8, 12.5],
+                        itemStyle: { color: '#34c759' },
+                        emphasis: { focus: 'series', itemStyle: { shadowBlur: 10, shadowColor: 'rgba(0,0,0,0.2)' } }
+                    }
+                ]
+            });
+
+            // 图表2：不同技术路径成熟度对比（堆叠柱状图）
+            const chart2 = echarts.init(document.getElementById('chart2'));
+            chart2.setOption({
+                title: {
+                    text: '不同技术路径成熟度评估',
+                    left: 'center',
+                    top: 10,
+                    textStyle: { fontSize: 16, fontWeight: 'bold' }
+                },
+                tooltip: {
+                    trigger: 'axis',
+                    backgroundColor: 'rgba(255,255,255,0.95)',
+                    borderColor: '#e5e5e5',
+                    borderWidth: 1,
+                    padding: [12, 16],
+                    textStyle: { color: '#1d1d1f', fontSize: 14 },
+                    axisPointer: { type: 'shadow', shadowStyle: { color: 'rgba(0,122,255,0.1)' } }
+                },
+                legend: {
+                    bottom: 10,
+                    left: 'center'
+                },
+                grid: { top: 60, bottom: 60, left: 60, right: 60 },
+                xAxis: {
+                    type: 'category',
+                    data: ['非侵入式', '侵入式', '半侵入式']
+                },
+                yAxis: {
+                    type: 'value',
+                    name: '成熟度评分',
+                    max: 100
+                },
+                series: [
+                    {
+                        name: '安全性',
+                        type: 'bar',
+                        stack: '总量',
+                        data: [25, 15, 20],
+                        itemStyle: { color: '#007aff' },
+                        emphasis: { focus: 'series', itemStyle: { shadowBlur: 10, shadowColor: 'rgba(0,0,0,0.2)' } }
+                    },
+                    {
+                        name: '易用性',
+                        type: 'bar',
+                        stack: '总量',
+                        data: [23, 12, 18],
+                        itemStyle: { color: '#34c759' },
+                        emphasis: { focus: 'series', itemStyle: { shadowBlur: 10, shadowColor: 'rgba(0,0,0,0.2)' } }
+                    },
+                    {
+                        name: '信号质量',
+                        type: 'bar',
+                        stack: '总量',
+                        data: [18, 25, 22],
+                        itemStyle: { color: '#ff9f0a' },
+                        emphasis: { focus: 'series', itemStyle: { shadowBlur: 10, shadowColor: 'rgba(0,0,0,0.2)' } }
+                    },
+                    {
+                        name: '可靠性',
+                        type: 'bar',
+                        stack: '总量',
+                        data: [22, 20, 19],
+                        itemStyle: { color: '#5856d6' },
+                        emphasis: { focus: 'series', itemStyle: { shadowBlur: 10, shadowColor: 'rgba(0,0,0,0.2)' } }
+                    }
+                ]
+            });
+
+            // 图表3：技术性能指标发展趋势（多系列折线图）
+            const chart3 = echarts.init(document.getElementById('chart3'));
+            chart3.setOption({
+                title: {
+                    text: '脑机接口技术关键性能指标发展趋势',
+                    left: 'center',
+                    top: 10,
+                    textStyle: { fontSize: 16, fontWeight: 'bold' }
+                },
+                tooltip: {
+                    trigger: 'axis',
+                    backgroundColor: 'rgba(255,255,255,0.95)',
+                    borderColor: '#e5e5e5',
+                    borderWidth: 1,
+                    padding: [12, 16],
+                    textStyle: { color: '#1d1d1f', fontSize: 14 },
+                    axisPointer: { type: 'cross' }
+                },
+                legend: {
+                    bottom: 10,
+                    left: 'center'
+                },
+                grid: { top: 60, bottom: 60, left: 60, right: 60 },
+                xAxis: {
+                    type: 'category',
+                    data: ['2023', '2024', '2025', '2026']
+                },
+                yAxis: {
+                    type: 'value',
+                    name: '性能指标'
+                },
+                series: [
+                    {
+                        name: '信号噪声比(dB)',
+                        type: 'line',
+                        data: [15, 17, 19, 22],
+                        itemStyle: { color: '#007aff' },
+                        emphasis: { focus: 'series', itemStyle: { shadowBlur: 10, shadowColor: 'rgba(0,0,0,0.2)' } }
+                    },
+                    {
+                        name: '分类准确率(%)',
+                        type: 'line',
+                        data: [85, 89, 93, 96],
+                        itemStyle: { color: '#34c759' },
+                        emphasis: { focus: 'series', itemStyle: { shadowBlur: 10, shadowColor: 'rgba(0,0,0,0.2)' } }
+                    },
+                    {
+                        name: '响应延迟(ms)',
+                        type: 'line',
+                        data: [200, 150, 120, 80],
+                        itemStyle: { color: '#ff3b30' },
+                        emphasis: { focus: 'series', itemStyle: { shadowBlur: 10, shadowColor: 'rgba(0,0,0,0.2)' } }
+                    },
+                    {
+                        name: '系统可用性(%)',
+                        type: 'line',
+                        data: [95, 97, 98.5, 99.5],
+                        itemStyle: { color: '#5856d6' },
+                        emphasis: { focus: 'series', itemStyle: { shadowBlur: 10, shadowColor: 'rgba(0,0,0,0.2)' } }
+                    }
+                ]
+            });
+
+            // 图表4：技术路径市场占比（饼图）
+            const chart4 = echarts.init(document.getElementById('chart4'));
+            chart4.setOption({
+                title: {
+                    text: '脑机接口技术路径市场占比分布',
+                    left: 'center',
+                    top: 10,
+                    textStyle: { fontSize: 16, fontWeight: 'bold' }
+                },
+                tooltip: {
+                    trigger: 'item',
+                    backgroundColor: 'rgba(255,255,255,0.95)',
+                    borderColor: '#e5e5e5',
+                    borderWidth: 1,
+                    padding: [12, 16],
+                    textStyle: { color: '#1d1d1f', fontSize: 14 },
+                    formatter: '{b}: {c}% ({d}%)'
+                },
+                legend: {
+                    bottom: 10,
+                    left: 'center'
+                },
+                series: [{
+                    type: 'pie',
+                    radius: ['35%', '55%'],
+                    center: ['50%', '50%'],
+                    data: [
+                        { value: 65, name: '非侵入式', itemStyle: { color: '#007aff' } },
+                        { value: 25, name: '侵入式', itemStyle: { color: '#34c759' } },
+                        { value: 10, name: '半侵入式', itemStyle: { color: '#ff9f0a' } }
+                    ],
+                    emphasis: {
+                        focus: 'self',
+                        itemStyle: { shadowBlur: 10, shadowColor: 'rgba(0,0,0,0.2)' }
+                    }
+                }]
+            });
+
+            // 图表5：应用领域投资分布（环形图）
+            const chart5 = echarts.init(document.getElementById('chart5'));
+            chart5.setOption({
+                title: {
+                    text: '脑机接口应用领域投资分布',
+                    left: 'center',
+                    top: 10,
+                    textStyle: { fontSize: 16, fontWeight: 'bold' }
+                },
+                tooltip: {
+                    trigger: 'item',
+                    backgroundColor: 'rgba(255,255,255,0.95)',
+                    borderColor: '#e5e5e5',
+                    borderWidth: 1,
+                    padding: [12, 16],
+                    textStyle: { color: '#1d1d1f', fontSize: 14 },
+                    formatter: '{b}: {c}% ({d}%)'
+                },
+                legend: {
+                    bottom: 10,
+                    left: 'center'
+                },
+                series: [{
+                    type: 'pie',
+                    radius: ['40%', '60%'],
+                    center: ['50%', '50%'],
+                    data: [
+                        { value: 40, name: '医疗保健', itemStyle: { color: '#007aff' } },
+                        { value: 25, name: '国防军工', itemStyle: { color: '#34c759' } },
+                        { value: 20, name: '工业自动化', itemStyle: { color: '#ff9f0a' } },
+                        { value: 15, name: '消费娱乐', itemStyle: { color: '#5856d6' } }
+                    ],
+                    emphasis: {
+                        focus: 'self',
+                        itemStyle: { shadowBlur: 10, shadowColor: 'rgba(0,0,0,0.2)' }
+                    }
+                }]
+            });
+
+            // 图表6：主要厂商技术能力雷达图
+            const chart6 = echarts.init(document.getElementById('chart6'));
+            chart6.setOption({
+                title: {
+                    text: '主要技术供应商综合能力对比',
+                    left: 'center',
+                    top: 10,
+                    textStyle: { fontSize: 16, fontWeight: 'bold' }
+                },
+                tooltip: {
+                    trigger: 'item',
+                    backgroundColor: 'rgba(255,255,255,0.95)',
+                    borderColor: '#e5e5e5',
+                    borderWidth: 1,
+                    padding: [12, 16],
+                    textStyle: { color: '#1d1d1f', fontSize: 14 }
+                },
+                legend: {
+                    bottom: 10,
+                    left: 'center'
+                },
+                radar: {
+                    center: ['50%', '55%'],
+                    radius: '55%',
+                    indicator: [
+                        { name: '信号质量', max: 100 },
+                        { name: '处理速度', max: 100 },
+                        { name: '易用性', max: 100 },
+                        { name: '可靠性', max: 100 },
+                        { name: '成本控制', max: 100 }
+                    ]
+                },
+                series: [{
+                    type: 'radar',
+                    data: [
+                        {
+                            value: [95, 90, 70, 85, 60],
+                            name: 'Neuralink',
+                            itemStyle: { color: '#007aff' }
+                        },
+                        {
+                            value: [80, 75, 90, 95, 85],
+                            name: 'EMOTIV',
+                            itemStyle: { color: '#34c759' }
+                        },
+                        {
+                            value: [85, 80, 80, 90, 75],
+                            name: 'g.tec',
+                            itemStyle: { color: '#ff9f0a' }
+                        }
+                    ],
+                    emphasis: {
+                        focus: 'self',
+                        itemStyle: { shadowBlur: 10, shadowColor: 'rgba(0,0,0,0.2)' }
+                    }
+                }]
+            });
+
+            // 图表7：航空航天应用场景评估（雷达图）
+            const chart7 = echarts.init(document.getElementById('chart7'));
+            chart7.setOption({
+                title: {
+                    text: '航空航天应用场景技术成熟度与市场需求评估',
+                    left: 'center',
+                    top: 10,
+                    textStyle: { fontSize: 16, fontWeight: 'bold' }
+                },
+                tooltip: {
+                    trigger: 'item',
+                    backgroundColor: 'rgba(255,255,255,0.95)',
+                    borderColor: '#e5e5e5',
+                    borderWidth: 1,
+                    padding: [12, 16],
+                    textStyle: { color: '#1d1d1f', fontSize: 14 }
+                },
+                legend: {
+                    bottom: 10,
+                    left: 'center'
+                },
+                radar: {
+                    center: ['50%', '55%'],
+                    radius: '55%',
+                    indicator: [
+                        { name: '飞行训练', max: 100 },
+                        { name: '态势感知', max: 100 },
+                        { name: '工作负荷管理', max: 100 },
+                        { name: '无人机控制', max: 100 },
+                        { name: '航天员支持', max: 100 }
+                    ]
+                },
+                series: [{
+                    type: 'radar',
+                    data: [
+                        {
+                            value: [85, 75, 70, 60, 55],
+                            name: '技术成熟度',
+                            itemStyle: { color: '#007aff' }
+                        },
+                        {
+                            value: [90, 80, 85, 75, 70],
+                            name: '市场需求',
+                            itemStyle: { color: '#34c759' }
+                        }
+                    ],
+                    emphasis: {
+                        focus: 'self',
+                        itemStyle: { shadowBlur: 10, shadowColor: 'rgba(0,0,0,0.2)' }
+                    }
+                }]
+            });
+
+            // 图表8：训练方式效果对比（横向条形图）
+            const chart8 = echarts.init(document.getElementById('chart8'));
+            chart8.setOption({
+                title: {
+                    text: '不同飞行训练方式效果对比',
+                    left: 'center',
+                    top: 10,
+                    textStyle: { fontSize: 16, fontWeight: 'bold' }
+                },
+                tooltip: {
+                    trigger: 'axis',
+                    backgroundColor: 'rgba(255,255,255,0.95)',
+                    borderColor: '#e5e5e5',
+                    borderWidth: 1,
+                    padding: [12, 16],
+                    textStyle: { color: '#1d1d1f', fontSize: 14 },
+                    axisPointer: { type: 'shadow', shadowStyle: { color: 'rgba(0,122,255,0.1)' } }
+                },
+                legend: {
+                    bottom: 10,
+                    left: 'center'
+                },
+                grid: { top: 60, bottom: 60, left: 120, right: 60 },
+                xAxis: {
+                    type: 'value',
+                    name: '效果评分'
+                },
+                yAxis: {
+                    type: 'category',
+                    data: ['传统训练', '模拟器训练', '智能训练']
+                },
+                series: [
+                    {
+                        name: '训练效果',
+                        type: 'bar',
+                        data: [70, 85, 95],
+                        itemStyle: { color: '#007aff' },
+                        emphasis: { focus: 'series', itemStyle: { shadowBlur: 10, shadowColor: 'rgba(0,0,0,0.2)' } }
+                    },
+                    {
+                        name: '时间效率',
+                        type: 'bar',
+                        data: [60, 80, 90],
+                        itemStyle: { color: '#34c759' },
+                        emphasis: { focus: 'series', itemStyle: { shadowBlur: 10, shadowColor: 'rgba(0,0,0,0.2)' } }
+                    },
+                    {
+                        name: '成本效益',
+                        type: 'bar',
+                        data: [50, 70, 85],
+                        itemStyle: { color: '#ff9f0a' },
+                        emphasis: { focus: 'series', itemStyle: { shadowBlur: 10, shadowColor: 'rgba(0,0,0,0.2)' } }
+                    }
+                ]
+            });
+
+            // 图表9：应用场景市场规模预测（面积图）
+            const chart9 = echarts.init(document.getElementById('chart9'));
+            chart9.setOption({
+                title: {
+                    text: '航空航天各应用场景市场规模预测',
+                    left: 'center',
+                    top: 10,
+                    textStyle: { fontSize: 16, fontWeight: 'bold' }
+                },
+                tooltip: {
+                    trigger: 'axis',
+                    backgroundColor: 'rgba(255,255,255,0.95)',
+                    borderColor: '#e5e5e5',
+                    borderWidth: 1,
+                    padding: [12, 16],
+                    textStyle: { color: '#1d1d1f', fontSize: 14 },
+                    axisPointer: { type: 'cross' }
+                },
+                legend: {
+                    bottom: 10,
+                    left: 'center'
+                },
+                grid: { top: 60, bottom: 60, left: 60, right: 60 },
+                xAxis: {
+                    type: 'category',
+                    data: ['2025', '2026', '2027', '2028', '2029', '2030']
+                },
+                yAxis: {
+                    type: 'value',
+                    name: '市场规模（百万美元）'
+                },
+                series: [
+                    {
+                        name: '飞行训练',
+                        type: 'line',
+                        areaStyle: { opacity: 0.3 },
+                        data: [20, 80, 150, 220, 300, 400],
+                        itemStyle: { color: '#007aff' },
+                        emphasis: { focus: 'series', itemStyle: { shadowBlur: 10, shadowColor: 'rgba(0,0,0,0.2)' } }
+                    },
+                    {
+                        name: '态势感知',
+                        type: 'line',
+                        areaStyle: { opacity: 0.3 },
+                        data: [15, 60, 120, 180, 250, 350],
+                        itemStyle: { color: '#34c759' },
+                        emphasis: { focus: 'series', itemStyle: { shadowBlur: 10, shadowColor: 'rgba(0,0,0,0.2)' } }
+                    },
+                    {
+                        name: '工作负荷管理',
+                        type: 'line',
+                        areaStyle: { opacity: 0.3 },
+                        data: [10, 40, 80, 130, 190, 280],
+                        itemStyle: { color: '#ff9f0a' },
+                        emphasis: { focus: 'series', itemStyle: { shadowBlur: 10, shadowColor: 'rgba(0,0,0,0.2)' } }
+                    }
+                ]
+            });
+
+            // 图表10：区域市场分布（玫瑰图）
+            const chart10 = echarts.init(document.getElementById('chart10'));
+            chart10.setOption({
+                title: {
+                    text: '全球脑机接口市场区域分布',
+                    left: 'center',
+                    top: 10,
+                    textStyle: { fontSize: 16, fontWeight: 'bold' }
+                },
+                tooltip: {
+                    trigger: 'item',
+                    backgroundColor: 'rgba(255,255,255,0.95)',
+                    borderColor: '#e5e5e5',
+                    borderWidth: 1,
+                    padding: [12, 16],
+                    textStyle: { color: '#1d1d1f', fontSize: 14 },
+                    formatter: '{b}: {c}% ({d}%)'
+                },
+                legend: {
+                    bottom: 10,
+                    left: 'center'
+                },
+                series: [{
+                    type: 'pie',
+                    radius: ['20%', '60%'],
+                    center: ['50%', '50%'],
+                    roseType: 'area',
+                    data: [
+                        { value: 45, name: '北美', itemStyle: { color: '#007aff' } },
+                        { value: 30, name: '亚太', itemStyle: { color: '#34c759' } },
+                        { value: 20, name: '欧洲', itemStyle: { color: '#ff9f0a' } },
+                        { value: 5, name: '其他', itemStyle: { color: '#5856d6' } }
+                    ],
+                    emphasis: {
+                        focus: 'self',
+                        itemStyle: { shadowBlur: 10, shadowColor: 'rgba(0,0,0,0.2)' }
+                    }
+                }]
+            });
+
+            // 图表11：价值链分析（嵌套环形图）
+            const chart11 = echarts.init(document.getElementById('chart11'));
+            chart11.setOption({
+                title: {
+                    text: '脑机接口航空航天应用价值链分析',
+                    left: 'center',
+                    top: 10,
+                    textStyle: { fontSize: 16, fontWeight: 'bold' }
+                },
+                tooltip: {
+                    trigger: 'item',
+                    backgroundColor: 'rgba(255,255,255,0.95)',
+                    borderColor: '#e5e5e5',
+                    borderWidth: 1,
+                    padding: [12, 16],
+                    textStyle: { color: '#1d1d1f', fontSize: 14 },
+                    formatter: '{b}: {c}% ({d}%)'
+                },
+                legend: {
+                    bottom: 10,
+                    left: 'center'
+                },
+                series: [
+                    {
+                        type: 'pie',
+                        radius: ['25%', '40%'],
+                        center: ['50%', '50%'],
+                        data: [
+                            { value: 35, name: '系统集成', itemStyle: { color: '#007aff' } },
+                            { value: 25, name: '硬件设备', itemStyle: { color: '#34c759' } },
+                            { value: 20, name: '软件算法', itemStyle: { color: '#ff9f0a' } },
+                            { value: 20, name: '服务支持', itemStyle: { color: '#5856d6' } }
+                        ],
+                        emphasis: {
+                            focus: 'self',
+                            itemStyle: { shadowBlur: 10, shadowColor: 'rgba(0,0,0,0.2)' }
+                        }
+                    },
+                    {
+                        type: 'pie',
+                        radius: ['45%', '60%'],
+                        center: ['50%', '50%'],
+                        data: [
+                            { value: 10, name: '应用服务', itemStyle: { color: '#007aff' } },
+                            { value: 10, name: '数据分析', itemStyle: { color: '#34c759' } },
+                            { value: 8, name: '传感器', itemStyle: { color: '#ff9f0a' } },
+                            { value: 7, name: '处理器', itemStyle: { color: '#5856d6' } },
+                            { value: 8, name: '算法优化', itemStyle: { color: '#00c7be' } },
+                            { value: 7, name: '界面设计', itemStyle: { color: '#ff3b30' } }
+                        ],
+                        emphasis: {
+                            focus: 'self',
+                            itemStyle: { shadowBlur: 10, shadowColor: 'rgba(0,0,0,0.2)' }
+                        }
+                    }
+                ]
+            });
+
+            // 图表12：投资规模与技术成熟度相关性（散点图）
+            const chart12 = echarts.init(document.getElementById('chart12'));
+            chart12.setOption({
+                title: {
+                    text: '投资规模与技术成熟度相关性分析',
+                    left: 'center',
+                    top: 10,
+                    textStyle: { fontSize: 16, fontWeight: 'bold' }
+                },
+                tooltip: {
+                    trigger: 'item',
+                    backgroundColor: 'rgba(255,255,255,0.95)',
+                    borderColor: '#e5e5e5',
+                    borderWidth: 1,
+                    padding: [12, 16],
+                    textStyle: { color: '#1d1d1f', fontSize: 14 },
+                    formatter: function(params) {
+                        return params.seriesName + '<br/>' +
+                               '技术成熟度: ' + params.value[0] + '<br/>' +
+                               '投资规模: ' + params.value[1] + '亿美元';
+                    }
+                },
+                legend: {
+                    bottom: 10,
+                    left: 'center'
+                },
+                grid: { top: 60, bottom: 60, left: 60, right: 60 },
+                xAxis: {
+                    type: 'value',
+                    name: '技术成熟度',
+                    min: 0,
+                    max: 100
+                },
+                yAxis: {
+                    type: 'value',
+                    name: '投资规模（亿美元）'
+                },
+                series: [
+                    {
+                        name: '医疗保健',
+                        type: 'scatter',
+                        symbolSize: 80,
+                        data: [[85, 15]],
+                        itemStyle: { color: '#007aff' },
+                        emphasis: { focus: 'self', itemStyle: { shadowBlur: 10, shadowColor: 'rgba(0,0,0,0.2)' } }
+                    },
+                    {
+                        name: '航空航天',
+                        type: 'scatter',
+                        symbolSize: 60,
+                        data: [[70, 8]],
+                        itemStyle: { color: '#34c759' },
+                        emphasis: { focus: 'self', itemStyle: { shadowBlur: 10, shadowColor: 'rgba(0,0,0,0.2)' } }
+                    },
+                    {
+                        name: '工业自动化',
+                        type: 'scatter',
+                        symbolSize: 50,
+                        data: [[65, 6]],
+                        itemStyle: { color: '#ff9f0a' },
+                        emphasis: { focus: 'self', itemStyle: { shadowBlur: 10, shadowColor: 'rgba(0,0,0,0.2)' } }
+                    },
+                    {
+                        name: '消费娱乐',
+                        type: 'scatter',
+                        symbolSize: 40,
+                        data: [[55, 4]],
+                        itemStyle: { color: '#5856d6' },
+                        emphasis: { focus: 'self', itemStyle: { shadowBlur: 10, shadowColor: 'rgba(0,0,0,0.2)' } }
+                    }
+                ]
+            });
+
+            // 图表13：技术组件成熟度（极坐标柱状图）
+            const chart13 = echarts.init(document.getElementById('chart13'));
+            chart13.setOption({
+                title: {
+                    text: '核心技术组件发展成熟度',
+                    left: 'center',
+                    top: 10,
+                    textStyle: { fontSize: 16, fontWeight: 'bold' }
+                },
+                tooltip: {
+                    trigger: 'item',
+                    backgroundColor: 'rgba(255,255,255,0.95)',
+                    borderColor: '#e5e5e5',
+                    borderWidth: 1,
+                    padding: [12, 16],
+                    textStyle: { color: '#1d1d1f', fontSize: 14 }
+                },
+                legend: {
+                    bottom: 10,
+                    left: 'center'
+                },
+                polar: {
+                    radius: [20, '60%']
+                },
+                angleAxis: {
+                    type: 'category',
+                    data: ['信号采集', '算法处理', '系统集成', '人机接口', '安全认证', '标准制定']
+                },
+                radiusAxis: {
+                    type: 'value',
+                    max: 100
+                },
+                series: [{
+                    type: 'bar',
+                    coordinateSystem: 'polar',
+                    data: [90, 85, 75, 70, 60, 45],
+                    itemStyle: {
+                        color: function(params) {
+                            const colors = ['#007aff', '#34c759', '#ff9f0a', '#5856d6', '#ff3b30', '#00c7be'];
+                            return colors[params.dataIndex];
+                        }
+                    },
+                    emphasis: {
+                        focus: 'self',
+                        itemStyle: { shadowBlur: 10, shadowColor: 'rgba(0,0,0,0.2)' }
+                    }
+                }]
+            });
+
+            // 图表14：算法性能对比（分组柱状图）
+            const chart14 = echarts.init(document.getElementById('chart14'));
+            chart14.setOption({
+                title: {
+                    text: '不同算法类型性能表现对比',
+                    left: 'center',
+                    top: 10,
+                    textStyle: { fontSize: 16, fontWeight: 'bold' }
+                },
+                tooltip: {
+                    trigger: 'axis',
+                    backgroundColor: 'rgba(255,255,255,0.95)',
+                    borderColor: '#e5e5e5',
+                    borderWidth: 1,
+                    padding: [12, 16],
+                    textStyle: { color: '#1d1d1f', fontSize: 14 },
+                    axisPointer: { type: 'shadow', shadowStyle: { color: 'rgba(0,122,255,0.1)' } }
+                },
+                legend: {
+                    bottom: 10,
+                    left: 'center'
+                },
+                grid: { top: 60, bottom: 60, left: 60, right: 60 },
+                xAxis: {
+                    type: 'category',
+                    data: ['深度学习', '传统机器学习', '混合算法']
+                },
+                yAxis: {
+                    type: 'value',
+                    name: '性能指标'
+                },
+                series: [
+                    {
+                        name: '准确率(%)',
+                        type: 'bar',
+                        data: [95, 82, 90],
+                        itemStyle: { color: '#007aff' },
+                        emphasis: { focus: 'series', itemStyle: { shadowBlur: 10, shadowColor: 'rgba(0,0,0,0.2)' } }
+                    },
+                    {
+                        name: '响应时间(ms)',
+                        type: 'bar',
+                        data: [85, 45, 65],
+                        itemStyle: { color: '#34c759' },
+                        emphasis: { focus: 'series', itemStyle: { shadowBlur: 10, shadowColor: 'rgba(0,0,0,0.2)' } }
+                    },
+                    {
+                        name: '计算效率',
+                        type: 'bar',
+                        data: [70, 90, 85],
+                        itemStyle: { color: '#ff9f0a' },
+                        emphasis: { focus: 'series', itemStyle: { shadowBlur: 10, shadowColor: 'rgba(0,0,0,0.2)' } }
+                    }
+                ]
+            });
+
+            // 图表15：技术发展时间规划（堆叠面积图）
+            const chart15 = echarts.init(document.getElementById('chart15'));
+            chart15.setOption({
+                title: {
+                    text: '脑机接口技术发展路径时间规划',
+                    left: 'center',
+                    top: 10,
+                    textStyle: { fontSize: 16, fontWeight: 'bold' }
+                },
+                tooltip: {
+                    trigger: 'axis',
+                    backgroundColor: 'rgba(255,255,255,0.95)',
+                    borderColor: '#e5e5e5',
+                    borderWidth: 1,
+                    padding: [12, 16],
+                    textStyle: { color: '#1d1d1f', fontSize: 14 },
+                    axisPointer: { type: 'cross' }
+                },
+                legend: {
+                    bottom: 10,
+                    left: 'center'
+                },
+                grid: { top: 60, bottom: 60, left: 60, right: 60 },
+                xAxis: {
+                    type: 'category',
+                    data: ['2024', '2025', '2026', '2027', '2028', '2029', '2030']
+                },
+                yAxis: {
+                    type: 'value',
+                    name: '技术投入占比(%)'
+                },
+                series: [
+                    {
+                        name: '基础研究',
+                        type: 'line',
+                        stack: '总量',
+                        areaStyle: { opacity: 0.6 },
+                        data: [40, 35, 30, 25, 20, 15, 10],
+                        itemStyle: { color: '#007aff' },
+                        emphasis: { focus: 'series', itemStyle: { shadowBlur: 10, shadowColor: 'rgba(0,0,0,0.2)' } }
+                    },
+                    {
+                        name: '技术开发',
+                        type: 'line',
+                        stack: '总量',
+                        areaStyle: { opacity: 0.6 },
+                        data: [35, 40, 45, 40, 35, 30, 25],
+                        itemStyle: { color: '#34c759' },
+                        emphasis: { focus: 'series', itemStyle: { shadowBlur: 10, shadowColor: 'rgba(0,0,0,0.2)' } }
+                    },
+                    {
+                        name: '系统集成',
+                        type: 'line',
+                        stack: '总量',
+                        areaStyle: { opacity: 0.6 },
+                        data: [15, 20, 25, 35, 40, 35, 30],
+                        itemStyle: { color: '#ff9f0a' },
+                        emphasis: { focus: 'series', itemStyle: { shadowBlur: 10, shadowColor: 'rgba(0,0,0,0.2)' } }
+                    },
+                    {
+                        name: '商业化',
+                        type: 'line',
+                        stack: '总量',
+                        areaStyle: { opacity: 0.6 },
+                        data: [10, 5, 0, 0, 5, 20, 35],
+                        itemStyle: { color: '#5856d6' },
+                        emphasis: { focus: 'series', itemStyle: { shadowBlur: 10, shadowColor: 'rgba(0,0,0,0.2)' } }
+                    }
+                ]
+            });
+
+            // 图表16：企业综合实力评估（雷达图）
+            const chart16 = echarts.init(document.getElementById('chart16'));
+            chart16.setOption({
+                title: {
+                    text: '主要参与企业综合实力评估',
+                    left: 'center',
+                    top: 10,
+                    textStyle: { fontSize: 16, fontWeight: 'bold' }
+                },
+                tooltip: {
+                    trigger: 'item',
+                    backgroundColor: 'rgba(255,255,255,0.95)',
+                    borderColor: '#e5e5e5',
+                    borderWidth: 1,
+                    padding: [12, 16],
+                    textStyle: { color: '#1d1d1f', fontSize: 14 }
+                },
+                legend: {
+                    bottom: 10,
+                    left: 'center'
+                },
+                radar: {
+                    center: ['50%', '55%'],
+                    radius: '55%',
+                    indicator: [
+                        { name: '技术创新', max: 100 },
+                        { name: '资金实力', max: 100 },
+                        { name: '市场化程度', max: 100 },
+                        { name: '产业化经验', max: 100 },
+                        { name: '人才储备', max: 100 }
+                    ]
+                },
+                series: [{
+                    type: 'radar',
+                    data: [
+                        {
+                            value: [95, 90, 60, 50, 85],
+                            name: 'Neuralink',
+                            itemStyle: { color: '#007aff' }
+                        },
+                        {
+                            value: [75, 70, 90, 95, 80],
+                            name: 'Natus Medical',
+                            itemStyle: { color: '#34c759' }
+                        },
+                        {
+                            value: [70, 65, 85, 90, 75],
+                            name: 'Compumedics',
+                            itemStyle: { color: '#ff9f0a' }
+                        },
+                        {
+                            value: [65, 50, 95, 80, 70],
+                            name: 'EMOTIV',
+                            itemStyle: { color: '#5856d6' }
+                        }
+                    ],
+                    emphasis: {
+                        focus: 'self',
+                        itemStyle: { shadowBlur: 10, shadowColor: 'rgba(0,0,0,0.2)' }
+                    }
+                }]
+            });
+
+            // 图表17：产业链价值分布（双Y轴图）
+            const chart17 = echarts.init(document.getElementById('chart17'));
+            chart17.setOption({
+                title: {
+                    text: '脑机接口产业链各环节价值与增长率分析',
+                    left: 'center',
+                    top: 10,
+                    textStyle: { fontSize: 16, fontWeight: 'bold' }
+                },
+                tooltip: {
+                    trigger: 'axis',
+                    backgroundColor: 'rgba(255,255,255,0.95)',
+                    borderColor: '#e5e5e5',
+                    borderWidth: 1,
+                    padding: [12, 16],
+                    textStyle: { color: '#1d1d1f', fontSize: 14 },
+                    axisPointer: { type: 'cross' }
+                },
+                legend: {
+                    bottom: 10,
+                    left: 'center'
+                },
+                grid: { top: 60, bottom: 60, left: 60, right: 60 },
+                xAxis: {
+                    type: 'category',
+                    data: ['芯片设计', '硬件制造', '软件开发', '系统集成', '应用服务']
+                },
+                yAxis: [
+                    {
+                        type: 'value',
+                        name: '价值占比(%)',
+                        position: 'left'
+                    },
+                    {
+                        type: 'value',
+                        name: '增长率(%)',
+                        position: 'right'
+                    }
+                ],
+                series: [
+                    {
+                        name: '价值占比',
+                        type: 'bar',
+                        yAxisIndex: 0,
+                        data: [10, 15, 20, 25, 30],
+                        itemStyle: { color: '#007aff' },
+                        emphasis: { focus: 'series', itemStyle: { shadowBlur: 10, shadowColor: 'rgba(0,0,0,0.2)' } }
+                    },
+                    {
+                        name: '增长率',
+                        type: 'line',
+                        yAxisIndex: 1,
+                        data: [25, 20, 30, 35, 40],
+                        itemStyle: { color: '#34c759' },
+                        emphasis: { focus: 'series', itemStyle: { shadowBlur: 10, shadowColor: 'rgba(0,0,0,0.2)' } }
+                    }
+                ]
+            });
+
+            // 图表18：专利申请趋势（热力图）
+            const chart18 = echarts.init(document.getElementById('chart18'));
+            chart18.setOption({
+                title: {
+                    text: '全球脑机接口专利申请区域与时间分布热力图',
+                    left: 'center',
+                    top: 10,
+                    textStyle: { fontSize: 16, fontWeight: 'bold' }
+                },
+                tooltip: {
+                    trigger: 'item',
+                    backgroundColor: 'rgba(255,255,255,0.95)',
+                    borderColor: '#e5e5e5',
+                    borderWidth: 1,
+                    padding: [12, 16],
+                    textStyle: { color: '#1d1d1f', fontSize: 14 },
+                    formatter: function(params) {
+                        return params.name + '<br/>' +
+                               '专利申请数: ' + params.value[2];
+                    }
+                },
+                legend: {
+                    bottom: 10,
+                    left: 'center'
+                },
+                grid: { top: 60, bottom: 60, left: 80, right: 60 },
+                xAxis: {
+                    type: 'category',
+                    data: ['2020', '2021', '2022', '2023', '2024']
+                },
+                yAxis: {
+                    type: 'category',
+                    data: ['中国', '美国', '欧洲', '日本', '韩国']
+                },
+                visualMap: {
+                    min: 0,
+                    max: 1200,
+                    calculable: true,
+                    orient: 'horizontal',
+                    left: 'center',
+                    bottom: '15%',
+                    inRange: {
+                        color: ['#e6f3ff', '#007aff']
+                    }
+                },
+                series: [{
+                    type: 'heatmap',
+                    data: [
+                        [0, 0, 420], [1, 0, 520], [2, 0, 680], [3, 0, 890], [4, 0, 1200],
+                        [0, 1, 380], [1, 1, 450], [2, 1, 520], [3, 1, 580], [4, 1, 650],
+                        [0, 2, 180], [1, 2, 220], [2, 2, 280], [3, 2, 350], [4, 2, 420],
+                        [0, 3, 120], [1, 3, 150], [2, 3, 180], [3, 3, 220], [4, 3, 280],
+                        [0, 4, 80], [1, 4, 100], [2, 4, 130], [3, 4, 160], [4, 4, 200]
+                    ],
+                    emphasis: {
+                        focus: 'self',
+                        itemStyle: { shadowBlur: 10, shadowColor: 'rgba(0,0,0,0.2)' }
+                    }
+                }]
+            });
+
+            // 响应式处理
+            window.addEventListener('resize', function() {
+                chart1.resize();
+                chart2.resize();
+                chart3.resize();
+                chart4.resize();
+                chart5.resize();
+                chart6.resize();
+                chart7.resize();
+                chart8.resize();
+                chart9.resize();
+                chart10.resize();
+                chart11.resize();
+                chart12.resize();
+                chart13.resize();
+                chart14.resize();
+                chart15.resize();
+                chart16.resize();
+                chart17.resize();
+                chart18.resize();
+            });
+        });
+    </script>
+</body>
+</html>
